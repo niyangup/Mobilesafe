@@ -123,7 +123,7 @@ public class AppManagerActivity extends Activity implements OnClickListener {
 			} else {
 				ViewHolder holder = null;
 				if (convertView == null) {
-					convertView = View.inflate(getApplicationContext(), R.layout.listview_app_item, null);
+					convertView = View.inflate(getApplicationContext(), R.layout.listview_process_item, null);
 					holder = new ViewHolder();
 					holder.iv_icon = (ImageView) convertView.findViewById(R.id.iv_icon);
 					holder.tv_name = (TextView) convertView.findViewById(R.id.tv_name);

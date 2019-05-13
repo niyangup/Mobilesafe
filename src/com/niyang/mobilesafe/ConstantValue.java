@@ -43,5 +43,10 @@ public class ConstantValue {
 	 * 左上角Y轴坐标的key
 	 */
 	public static final String LOCATION_Y = "location_y";
+	
+	/**
+	 * 是否显示系统进程的key
+	 */
+	protected static final String SHOW_SYSTEM = "show_system";
 
 }
