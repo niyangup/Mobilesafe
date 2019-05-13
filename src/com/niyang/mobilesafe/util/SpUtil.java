@@ -10,7 +10,7 @@ public class SpUtil {
 	 * 写入boolean变量至sp中
 	 * @param ctx	上下文
 	 * @param key	存储节点的名称
-	 * @param value	存储节点的值 boolean
+	 * @param value	存储节点的值 boolean   
 	 */
 	public static void putBoolean(Context ctx,String key,boolean value) {
 		if (sp==null) {
