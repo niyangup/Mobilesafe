@@ -19,6 +19,7 @@ public class LockScreenService extends Service {
 	}
 	@Override
 	public void onCreate() {
+		//锁屏的Action
 		IntentFilter intentFilter=new IntentFilter(Intent.ACTION_SCREEN_OFF);
 		innerReceiver = new InnerReceiver();
 		registerReceiver(innerReceiver, intentFilter);

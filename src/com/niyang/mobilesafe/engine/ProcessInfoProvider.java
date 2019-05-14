@@ -151,11 +151,12 @@ public class ProcessInfoProvider {
 		ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
 		List<RunningAppProcessInfo> list = am.getRunningAppProcesses();
 		for (RunningAppProcessInfo info : list) {
-			//除了手机卫士以外,其他的进程都需要kill
+			// 除了手机卫士以外,其他的进程都需要kill
 			if (info.processName.equals(context.getPackageName())) {
 				continue;
 			}
 			am.killBackgroundProcesses(info.processName);
 		}
+
 	}
 }

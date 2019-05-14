@@ -27,6 +27,7 @@ import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -114,18 +115,43 @@ public class SplashActivity extends Activity {
 		}
 
 		initAnimation();
+
+		if (!SpUtil.getBoolean(getApplicationContext(), ConstantValue.HAS_SHORTCUT, false)) {
+			initShortCut();
+		}
+	}
+
+	private void initShortCut() {
+		// 1.给Intent添加数据 名称,图标
+		Intent intent = new Intent();
+		intent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+
+		intent.putExtra(Intent.EXTRA_SHORTCUT_ICON,
+				BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher));
+		intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, "黑马卫士");
+
+		// 点击图标后跳转到homeActivity
+		Intent shortCutIntnet = new Intent("android.intent.action.HOME");
+		shortCutIntnet.addCategory("android.intent.category.DEFAULT");
+		intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortCutIntnet);
+
+		// 2.发送广播
+		sendBroadcast(intent);
+		SpUtil.putBoolean(getApplicationContext(), ConstantValue.HAS_SHORTCUT, true);
 	}
 
 	private void initDB() {
 		// 1.归属地数据库拷贝
 		initAddressDB("address.db");
+		// 2.常用号码数据库拷贝
+		initAddressDB("commonnum.db");
 
 	}
 
 	private void initAddressDB(String dbName) {
 		// 将数据库复制到文件中
 		File files = getFilesDir();
-		File file = new File(files, "address.db");
+		File file = new File(files, dbName);
 		if (file.exists()) {
 			return;
 		} else {
