@@ -68,6 +68,7 @@
         <activity android:name=".ProcessManagerActivity" />
         <activity android:name=".ProcessSettingActivity" />
         <activity android:name=".CommonNumberActivity" />
+        <activity android:name=".AppLockActivity" />
         <activity
             android:name=".ToastLocationActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />

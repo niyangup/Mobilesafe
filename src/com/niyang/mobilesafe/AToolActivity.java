@@ -19,24 +19,39 @@ public class AToolActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_atool);
-		//电话归属地查询方法
+		// 电话归属地查询方法
 		initAddress();
-		//短息备份方法
+		// 短息备份方法
 		initBackup();
-		//常用号码查询
+		// 常用号码查询
 		initCommonNumberQuery();
+		// 程序锁
+		initAppLock();
+	}
+
+	private void initAppLock() {
+		TextView tv_app_lock = (TextView) findViewById(R.id.tv_app_lock);
+
+		tv_app_lock.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getApplicationContext(), AppLockActivity.class));
+			}
+		});
+		
 	}
 
 	private void initCommonNumberQuery() {
 		TextView tv_number_query = (TextView) findViewById(R.id.tv_number_query);
 		tv_number_query.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(getApplicationContext(), CommonNumberActivity.class));
 			}
 		});
-		
+
 	}
 
 	private void initBackup() {
@@ -64,12 +79,12 @@ public class AToolActivity extends Activity {
 				// File.separator + "sms.xml";
 				String path = getFilesDir().getAbsolutePath() + File.separator + "sms.xml";
 				SmsBackUp.backup(getApplicationContext(), path, new callBack() {
-					
+
 					@Override
 					public void setProgress(int index) {
 						dialog.setProgress(index);
 					}
-					
+
 					@Override
 					public void setMax(int max) {
 						dialog.setMax(max);
