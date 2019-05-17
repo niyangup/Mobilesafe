@@ -38,7 +38,7 @@ public class ProcessManagerActivity extends Activity implements OnClickListener 
 	private List<ProcessInfo> mCustomerList;
 	private MyAdapter mAdapter;
 	private TextView tv_des;
-	private long mAvailSpace=0;
+	private long mAvailSpace = 0;
 	protected ProcessInfo mProcessInfo;
 	private Handler mHandler = new Handler() {
 
@@ -51,7 +51,6 @@ public class ProcessManagerActivity extends Activity implements OnClickListener 
 		};
 	};
 	private String mStrTotalSpace;
-	
 
 	class MyAdapter extends BaseAdapter {
 
@@ -74,8 +73,8 @@ public class ProcessManagerActivity extends Activity implements OnClickListener 
 			boolean showSystem = SpUtil.getBoolean(getApplicationContext(), ConstantValue.SHOW_SYSTEM, false);
 			if (showSystem) {
 				return mSystemList.size() + mCustomerList.size() + 2;
-			}else {
-				return mCustomerList.size()+1;
+			} else {
+				return mCustomerList.size() + 1;
 			}
 		}
 
@@ -169,13 +168,14 @@ public class ProcessManagerActivity extends Activity implements OnClickListener 
 		initTitleData();
 		intiListData();
 	}
+
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		if (mAdapter!=null) {
+		if (mAdapter != null) {
 			mAdapter.notifyDataSetChanged();
 		}
-		
+
 	}
 
 	private void intiListData() {
@@ -301,7 +301,7 @@ public class ProcessManagerActivity extends Activity implements OnClickListener 
 	}
 
 	private void setting() {
-		startActivityForResult(new Intent(ProcessManagerActivity.this, ProcessSettingActivity.class),0);
+		startActivityForResult(new Intent(ProcessManagerActivity.this, ProcessSettingActivity.class), 0);
 	}
 
 	/**
@@ -309,6 +309,10 @@ public class ProcessManagerActivity extends Activity implements OnClickListener 
 	 */
 	private void cleanProcess() {
 		List<ProcessInfo> killProcessList = new ArrayList<>();
+
+		if (killProcessList != null) {
+			killProcessList.clear();
+		}
 		for (ProcessInfo processInfo : mCustomerList) {
 			if (processInfo.getPackageName().equals(getPackageName())) {
 				continue;
@@ -347,15 +351,14 @@ public class ProcessManagerActivity extends Activity implements OnClickListener 
 		// 更新进程总数
 		mProcessCount -= killProcessList.size();
 		// 更新内存的可用剩余空间
-		mAvailSpace+=totalReleseSpace;
-		
-		
-		//更新进程总数和剩余空间的大小
-		tv_process_count.setText("进程总数:"+mProcessCount);
+		mAvailSpace += totalReleseSpace;
+
+		// 更新进程总数和剩余空间的大小
+		tv_process_count.setText("进程总数:" + mProcessCount);
 		String size = Formatter.formatFileSize(getApplicationContext(), mAvailSpace);
-		tv_memory_count.setText("剩余/总共"+size+"/"+mStrTotalSpace);
-		//通过Toast告诉用户,释放了多少空间,kill几个进程
-		String format = String.format("kill了%d个进程,释放了%s的空间", killProcessList.size(),size);
+		tv_memory_count.setText("剩余/总共" + size + "/" + mStrTotalSpace);
+		// 通过Toast告诉用户,释放了多少空间,kill几个进程
+		String format = String.format("kill了%d个进程,释放了%s的空间", killProcessList.size(), size);
 		ToastUtil.show(getApplicationContext(), format);
 	}
 

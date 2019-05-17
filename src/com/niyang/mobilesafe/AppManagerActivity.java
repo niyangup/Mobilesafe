@@ -33,6 +33,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class AppManagerActivity extends Activity implements OnClickListener {
@@ -122,12 +123,12 @@ public class AppManagerActivity extends Activity implements OnClickListener {
 				return convertView;
 			} else {
 				ViewHolder holder = null;
-				if (convertView == null) {
+				if (convertView == null && !(convertView instanceof RelativeLayout)) {
 					convertView = View.inflate(getApplicationContext(), R.layout.listview_process_item, null);
 					holder = new ViewHolder();
 					holder.iv_icon = (ImageView) convertView.findViewById(R.id.iv_icon);
 					holder.tv_name = (TextView) convertView.findViewById(R.id.tv_name);
-					holder.tv_path = (TextView) convertView.findViewById(R.id.tv_path);
+					holder.tv_path = (TextView) convertView.findViewById(R.id.tv_memory_info);
 					convertView.setTag(holder);
 				} else {
 					holder = (ViewHolder) convertView.getTag();
@@ -262,8 +263,8 @@ public class AppManagerActivity extends Activity implements OnClickListener {
 		tv_user_space.setText("磁盘可用:" + user);
 		tv_sd_space.setText("sd卡可用:" + sd);
 	}
-	
-	//TODO卸载刷新
+
+	// TODO卸载刷新
 	@Override
 	protected void onResume() {
 		super.onResume();
@@ -287,42 +288,43 @@ public class AppManagerActivity extends Activity implements OnClickListener {
 			};
 		}.start();
 	}
+
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.tv_uninstall:
 			if (mAppInfo.isSystem) {
 				ToastUtil.show(getApplicationContext(), "此应用不能卸载");
-			}else {
-				//跳转到系统卸载管理界面
+			} else {
+				// 跳转到系统卸载管理界面
 				Intent intent = new Intent("android.intent.action.DELETE");
 				intent.addCategory("android.intent.category.DEFAULT");
-				intent.setData(Uri.parse("package:"+mAppInfo.getPackageName()));
+				intent.setData(Uri.parse("package:" + mAppInfo.getPackageName()));
 				startActivity(intent);
 			}
 			break;
 		case R.id.tv_start:
 			PackageManager pm = getPackageManager();
-			//通过Launch开启指定包名的intent,开启应用
+			// 通过Launch开启指定包名的intent,开启应用
 			Intent intent = pm.getLaunchIntentForPackage(mAppInfo.getPackageName());
-			//有可能是系统等非应用,不可开启,为避免空指针,进行容错处理
-			if (intent!=null) {
+			// 有可能是系统等非应用,不可开启,为避免空指针,进行容错处理
+			if (intent != null) {
 				startActivity(intent);
-			}else {
+			} else {
 				ToastUtil.show(getApplicationContext(), "此应用不能被开启");
 			}
-			
+
 			break;
-			//分享第三方
+		// 分享第三方
 		case R.id.tv_share:
-			Intent sendIntent= new Intent(Intent.ACTION_SEND);
-			sendIntent.putExtra(Intent.EXTRA_TEXT, "分享一个应用,应用名称为"+mAppInfo.getName());
+			Intent sendIntent = new Intent(Intent.ACTION_SEND);
+			sendIntent.putExtra(Intent.EXTRA_TEXT, "分享一个应用,应用名称为" + mAppInfo.getName());
 			sendIntent.setType("text/plain");
 			startActivity(sendIntent);
 			break;
 		}
-		//点击窗体后 关闭
-		if (mPopupWindow!=null) {
+		// 点击窗体后 关闭
+		if (mPopupWindow != null) {
 			mPopupWindow.dismiss();
 		}
 	}

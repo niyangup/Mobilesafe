@@ -26,10 +26,10 @@ public class AToolActivity extends Activity {
 		// 常用号码查询
 		initCommonNumberQuery();
 		// 程序锁
-		initAppLock();
+		//initAppLock();
 	}
 
-	private void initAppLock() {
+	/*private void initAppLock() {
 		TextView tv_app_lock = (TextView) findViewById(R.id.tv_app_lock);
 
 		tv_app_lock.setOnClickListener(new OnClickListener() {
@@ -40,7 +40,7 @@ public class AToolActivity extends Activity {
 			}
 		});
 		
-	}
+	}*/
 
 	private void initCommonNumberQuery() {
 		TextView tv_number_query = (TextView) findViewById(R.id.tv_number_query);

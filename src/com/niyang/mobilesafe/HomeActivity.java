@@ -32,10 +32,14 @@ public class HomeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 		initView();
+		
 		mLl_one.setOnClickListener(new MyListener());
 		mLl_two.setOnClickListener(new MyListener());
 		mLl_three.setOnClickListener(new MyListener());
 		mLl_four.setOnClickListener(new MyListener());
+		mLl_five.setOnClickListener(new MyListener());
+		mLl_six.setOnClickListener(new MyListener());
+		mLl_seven.setOnClickListener(new MyListener());
 		mLl_nine.setOnClickListener(new MyListener());
 		mLl_eight.setOnClickListener(new MyListener());
 	}
@@ -184,6 +188,15 @@ class MyListener implements OnClickListener{
 			break;
 		case R.id.ll_four:
 			startActivity(new Intent(HomeActivity.this, ProcessManagerActivity.class));
+			break;
+		case R.id.ll_five:
+			startActivity(new Intent(HomeActivity.this, TrafficActivity.class));
+			break;
+		case R.id.ll_six:
+			startActivity(new Intent(HomeActivity.this, AntivirusAcitivity.class));
+			break;
+		case R.id.ll_seven:
+			startActivity(new Intent(HomeActivity.this, CacheClearActivity.class));
 			break;
 		case R.id.ll_eight:
 			startActivity(new Intent(HomeActivity.this, AToolActivity.class));

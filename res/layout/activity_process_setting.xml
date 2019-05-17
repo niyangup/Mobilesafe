@@ -3,20 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    <TextView 
-        android:text="进程设置"
-        style="@style/TitleStyle"/>
-    
-    <CheckBox 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="进程设置" />
+
+    <CheckBox
         android:id="@+id/cb_show_system"
-        android:text="隐藏系统进程"/>
-    <CheckBox 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="隐藏系统进程" />
+
+    <CheckBox
         android:id="@+id/cb_lock_clean"
-        android:text="锁屏清理已关闭"/>
-    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="锁屏清理已关闭" />
 
 </LinearLayout>

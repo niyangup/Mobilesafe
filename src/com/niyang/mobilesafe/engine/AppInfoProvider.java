@@ -31,7 +31,7 @@ public class AppInfoProvider {
 			// 4.获取Manifest下application节点下的信息
 			ApplicationInfo applicationInfo = packageInfo.applicationInfo;
 			// 5.获取应用的包名
-			appInfo.name = applicationInfo.loadLabel(manager).toString();
+			appInfo.name = applicationInfo.loadLabel(manager).toString()+applicationInfo.uid;
 			// 6.获取应用的图标
 			appInfo.icon = applicationInfo.loadIcon(manager);
 			// 7.判断是否为系统应用

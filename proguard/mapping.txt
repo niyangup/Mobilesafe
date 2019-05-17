@@ -1,0 +1,1341 @@
+android.content.pm.IPackageDataObserver -> a.a.a.a:
+    void onRemoveCompleted(java.lang.String,boolean) -> a
+android.content.pm.IPackageDataObserver$Stub -> a.a.a.b:
+    android.os.IBinder asBinder() -> asBinder
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+android.content.pm.IPackageStatsObserver -> a.a.a.c:
+    void onGetStatsCompleted(android.content.pm.PackageStats,boolean) -> a
+android.content.pm.IPackageStatsObserver$Stub -> a.a.a.d:
+    android.os.IBinder asBinder() -> asBinder
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.lidroid.xutils.HttpUtils -> com.a.a.a:
+    com.lidroid.xutils.http.HttpCache sHttpCache -> a
+    org.apache.http.impl.client.DefaultHttpClient httpClient -> b
+    org.apache.http.protocol.HttpContext httpContext -> c
+    com.lidroid.xutils.http.callback.HttpRedirectHandler httpRedirectHandler -> d
+    java.lang.String responseTextCharset -> e
+    long currentRequestExpiry -> f
+    com.lidroid.xutils.task.PriorityExecutor EXECUTOR -> g
+    com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+    com.lidroid.xutils.http.HttpHandler download(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,boolean,boolean,com.lidroid.xutils.http.callback.RequestCallBack) -> a
+com.lidroid.xutils.HttpUtils$1 -> com.a.a.b:
+    com.lidroid.xutils.HttpUtils this$0 -> a
+com.lidroid.xutils.HttpUtils$2 -> com.a.a.c:
+    com.lidroid.xutils.HttpUtils this$0 -> a
+com.lidroid.xutils.cache.KeyExpiryMap -> com.a.a.a.a:
+    java.lang.Long get(java.lang.Object) -> a
+    java.lang.Long put(java.lang.Object,java.lang.Long) -> a
+    boolean containsKey(java.lang.Object) -> containsKey
+    java.lang.Long remove(java.lang.Object) -> b
+    void clear() -> clear
+    java.lang.Object get(java.lang.Object) -> get
+    java.lang.Object remove(java.lang.Object) -> remove
+    java.lang.Object put(java.lang.Object,java.lang.Object) -> put
+com.lidroid.xutils.cache.LruMemoryCache -> com.a.a.a.b:
+    java.util.LinkedHashMap map -> a
+    int size -> b
+    int maxSize -> c
+    int putCount -> d
+    int createCount -> e
+    int evictionCount -> f
+    int hitCount -> g
+    int missCount -> h
+    com.lidroid.xutils.cache.KeyExpiryMap keyExpiryMap -> i
+    java.lang.Object get(java.lang.Object) -> a
+    java.lang.Object put(java.lang.Object,java.lang.Object,long) -> a
+    void trimToSize(int) -> a
+    java.lang.Object remove(java.lang.Object) -> b
+    void entryRemoved(boolean,java.lang.Object,java.lang.Object,java.lang.Object) -> a
+    java.lang.Object create(java.lang.Object) -> c
+    int safeSizeOf(java.lang.Object,java.lang.Object) -> b
+    int sizeOf(java.lang.Object,java.lang.Object) -> a
+    java.lang.String toString() -> toString
+com.lidroid.xutils.exception.BaseException -> com.a.a.b.a:
+com.lidroid.xutils.exception.HttpException -> com.a.a.b.b:
+    int exceptionCode -> a
+com.lidroid.xutils.http.HttpCache -> com.a.a.c.a:
+    com.lidroid.xutils.cache.LruMemoryCache mMemoryCache -> a
+    int cacheSize -> b
+    long defaultExpiryTime -> c
+    java.util.concurrent.ConcurrentHashMap httpMethod_enabled_map -> d
+    long getDefaultExpiryTime() -> a
+    void put(java.lang.String,java.lang.String,long) -> a
+    java.lang.String get(java.lang.String) -> a
+    boolean isEnabled(java.lang.String) -> b
+com.lidroid.xutils.http.HttpCache$1 -> com.a.a.c.b:
+    com.lidroid.xutils.http.HttpCache this$0 -> a
+    int sizeOf(java.lang.String,java.lang.String) -> a
+    int sizeOf(java.lang.Object,java.lang.Object) -> a
+com.lidroid.xutils.http.HttpHandler -> com.a.a.c.c:
+    org.apache.http.impl.client.AbstractHttpClient client -> b
+    org.apache.http.protocol.HttpContext context -> c
+    com.lidroid.xutils.http.callback.HttpRedirectHandler httpRedirectHandler -> d
+    java.lang.String requestUrl -> e
+    java.lang.String requestMethod -> f
+    org.apache.http.client.methods.HttpRequestBase request -> g
+    boolean isUploading -> h
+    com.lidroid.xutils.http.callback.RequestCallBack callback -> i
+    int retriedCount -> j
+    java.lang.String fileSavePath -> k
+    boolean isDownloadingFile -> l
+    boolean autoResume -> m
+    boolean autoRename -> n
+    java.lang.String charset -> o
+    com.lidroid.xutils.http.HttpHandler$State state -> p
+    long expiry -> q
+    long lastUpdateTime -> r
+    com.lidroid.xutils.http.HttpHandler$NotUseApacheRedirectHandler notUseApacheRedirectHandler -> s
+    void setHttpRedirectHandler(com.lidroid.xutils.http.callback.HttpRedirectHandler) -> a
+    void setExpiry(long) -> a
+    com.lidroid.xutils.http.ResponseInfo sendRequest(org.apache.http.client.methods.HttpRequestBase) -> a
+    java.lang.Void doInBackground(java.lang.Object[]) -> a
+    void onProgressUpdate(java.lang.Object[]) -> b
+    com.lidroid.xutils.http.ResponseInfo handleResponse(org.apache.http.HttpResponse) -> a
+    boolean updateProgress(long,long,boolean) -> a
+    java.lang.Object doInBackground(java.lang.Object[]) -> c
+com.lidroid.xutils.http.HttpHandler$NotUseApacheRedirectHandler -> com.a.a.c.d:
+com.lidroid.xutils.http.HttpHandler$State -> com.a.a.c.e:
+    com.lidroid.xutils.http.HttpHandler$State WAITING -> a
+    com.lidroid.xutils.http.HttpHandler$State STARTED -> b
+    com.lidroid.xutils.http.HttpHandler$State LOADING -> c
+    com.lidroid.xutils.http.HttpHandler$State FAILURE -> d
+    com.lidroid.xutils.http.HttpHandler$State CANCELLED -> e
+    com.lidroid.xutils.http.HttpHandler$State SUCCESS -> f
+    int value -> g
+    com.lidroid.xutils.http.HttpHandler$State[] ENUM$VALUES -> h
+    com.lidroid.xutils.http.HttpHandler$State[] values() -> values
+    com.lidroid.xutils.http.HttpHandler$State valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.http.RequestParams -> com.a.a.c.f:
+    java.lang.String charset -> a
+    java.util.List headers -> b
+    java.util.List queryStringParams -> c
+    org.apache.http.HttpEntity bodyEntity -> d
+    java.util.List bodyParams -> e
+    java.util.HashMap fileParams -> f
+    com.lidroid.xutils.task.Priority priority -> g
+    com.lidroid.xutils.task.Priority getPriority() -> a
+    java.lang.String getCharset() -> b
+    org.apache.http.HttpEntity getEntity() -> c
+    java.util.List getQueryStringParams() -> d
+    java.util.List getHeaders() -> e
+com.lidroid.xutils.http.RequestParams$HeaderItem -> com.a.a.c.g:
+    boolean overwrite -> a
+    org.apache.http.Header header -> b
+com.lidroid.xutils.http.ResponseInfo -> com.a.a.c.h:
+    org.apache.http.HttpResponse response -> j
+    java.lang.Object result -> a
+    boolean resultFormCache -> b
+    java.util.Locale locale -> c
+    int statusCode -> d
+    org.apache.http.ProtocolVersion protocolVersion -> e
+    java.lang.String reasonPhrase -> f
+    long contentLength -> g
+    org.apache.http.Header contentType -> h
+    org.apache.http.Header contentEncoding -> i
+com.lidroid.xutils.http.callback.DefaultHttpRedirectHandler -> com.a.a.c.a.a:
+    org.apache.http.client.methods.HttpRequestBase getDirectRequest(org.apache.http.HttpResponse) -> a
+com.lidroid.xutils.http.callback.FileDownloadHandler -> com.a.a.c.a.b:
+    java.io.File handleEntity(org.apache.http.HttpEntity,com.lidroid.xutils.http.callback.RequestCallBackHandler,java.lang.String,boolean,java.lang.String) -> a
+com.lidroid.xutils.http.callback.HttpRedirectHandler -> com.a.a.c.a.c:
+    org.apache.http.client.methods.HttpRequestBase getDirectRequest(org.apache.http.HttpResponse) -> a
+com.lidroid.xutils.http.callback.RequestCallBack -> com.a.a.c.a.d:
+    java.lang.String requestUrl -> a
+    int rate -> b
+    int getRate() -> a
+    void setRequestUrl(java.lang.String) -> a
+    void onStart() -> b
+    void onLoading(long,long,boolean) -> a
+    void onSuccess(com.lidroid.xutils.http.ResponseInfo) -> a
+    void onFailure(com.lidroid.xutils.exception.HttpException,java.lang.String) -> a
+com.lidroid.xutils.http.callback.RequestCallBackHandler -> com.a.a.c.a.e:
+    boolean updateProgress(long,long,boolean) -> a
+com.lidroid.xutils.http.callback.StringDownloadHandler -> com.a.a.c.a.f:
+    java.lang.String handleEntity(org.apache.http.HttpEntity,com.lidroid.xutils.http.callback.RequestCallBackHandler,java.lang.String) -> a
+com.lidroid.xutils.http.client.DefaultSSLSocketFactory -> com.a.a.c.b.a:
+    javax.net.ssl.SSLContext sslContext -> a
+    java.security.KeyStore trustStore -> b
+    com.lidroid.xutils.http.client.DefaultSSLSocketFactory instance -> c
+    com.lidroid.xutils.http.client.DefaultSSLSocketFactory getSocketFactory() -> a
+    java.net.Socket createSocket(java.net.Socket,java.lang.String,int,boolean) -> createSocket
+    java.net.Socket createSocket() -> createSocket
+com.lidroid.xutils.http.client.DefaultSSLSocketFactory$1 -> com.a.a.c.b.b:
+    com.lidroid.xutils.http.client.DefaultSSLSocketFactory this$0 -> a
+    java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+    void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+com.lidroid.xutils.http.client.HttpRequest -> com.a.a.c.b.c:
+    org.apache.http.HttpEntity entity -> a
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod method -> b
+    com.lidroid.xutils.http.client.util.URIBuilder uriBuilder -> c
+    java.nio.charset.Charset uriCharset -> d
+    com.lidroid.xutils.http.client.HttpRequest addQueryStringParams(java.util.List) -> a
+    void setRequestParams(com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+    void setURI(java.lang.String) -> a
+    void setEntity(org.apache.http.HttpEntity) -> a
+com.lidroid.xutils.http.client.HttpRequest$HttpMethod -> com.a.a.c.b.d:
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod GET -> a
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod POST -> b
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod PUT -> c
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod HEAD -> d
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod MOVE -> e
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod COPY -> f
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod DELETE -> g
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod OPTIONS -> h
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod TRACE -> i
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod CONNECT -> j
+    java.lang.String value -> k
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod[] ENUM$VALUES -> l
+    java.lang.String toString() -> toString
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod[] values() -> values
+    com.lidroid.xutils.http.client.HttpRequest$HttpMethod valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.http.client.RetryHandler -> com.a.a.c.b.e:
+    java.util.HashSet exceptionWhiteList -> a
+    java.util.HashSet exceptionBlackList -> b
+    int maxRetries -> c
+com.lidroid.xutils.http.client.entity.BodyParamsEntity -> com.a.a.c.b.a.a:
+    byte[] content -> a
+    boolean dirty -> b
+    java.lang.String charset -> c
+    java.util.List params -> d
+    void refreshContent() -> b
+    java.lang.Object clone() -> a
+com.lidroid.xutils.http.client.entity.UploadEntity -> com.a.a.c.b.a.b:
+    void setCallBackHandler(com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+com.lidroid.xutils.http.client.multipart.FormBodyPart -> com.a.a.c.b.b.a:
+    java.lang.String name -> a
+    com.lidroid.xutils.http.client.multipart.MinimalFieldHeader header -> b
+    com.lidroid.xutils.http.client.multipart.content.ContentBody body -> c
+    java.lang.String getName() -> a
+    void addField(java.lang.String,java.lang.String) -> a
+    void generateContentDisposition(com.lidroid.xutils.http.client.multipart.content.ContentBody) -> a
+    void generateContentType(com.lidroid.xutils.http.client.multipart.content.ContentBody) -> b
+    void generateTransferEncoding(com.lidroid.xutils.http.client.multipart.content.ContentBody) -> c
+com.lidroid.xutils.http.client.multipart.HttpMultipart -> com.a.a.c.b.b.b:
+    org.apache.http.util.ByteArrayBuffer FIELD_SEP -> a
+    org.apache.http.util.ByteArrayBuffer CR_LF -> b
+    org.apache.http.util.ByteArrayBuffer TWO_DASHES -> c
+    java.lang.String subType -> d
+    java.nio.charset.Charset charset -> e
+    java.lang.String boundary -> f
+    java.util.List parts -> g
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode mode -> h
+    org.apache.http.util.ByteArrayBuffer encode(java.nio.charset.Charset,java.lang.String) -> a
+    void addBodyPart(com.lidroid.xutils.http.client.multipart.FormBodyPart) -> a
+com.lidroid.xutils.http.client.multipart.HttpMultipartMode -> com.a.a.c.b.b.c:
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode STRICT -> a
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode BROWSER_COMPATIBLE -> b
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode[] ENUM$VALUES -> c
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode[] values() -> values
+    com.lidroid.xutils.http.client.multipart.HttpMultipartMode valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.http.client.multipart.MIME -> com.a.a.c.b.b.d:
+    java.nio.charset.Charset DEFAULT_CHARSET -> a
+com.lidroid.xutils.http.client.multipart.MinimalField -> com.a.a.c.b.b.e:
+    java.lang.String name -> a
+    java.lang.String value -> b
+    java.lang.String getName() -> a
+    java.lang.String toString() -> toString
+com.lidroid.xutils.http.client.multipart.MinimalFieldHeader -> com.a.a.c.b.b.f:
+    java.util.List fields -> a
+    java.util.Map fieldMap -> b
+    void addField(com.lidroid.xutils.http.client.multipart.MinimalField) -> a
+    java.util.Iterator iterator() -> iterator
+    java.lang.String toString() -> toString
+com.lidroid.xutils.http.client.multipart.MultipartEntity -> com.a.a.c.b.b.g:
+    com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo callBackInfo -> a
+    char[] MULTIPART_CHARS -> b
+    com.lidroid.xutils.http.client.multipart.HttpMultipart multipart -> c
+    org.apache.http.Header contentType -> d
+    boolean dirty -> e
+    java.lang.String boundary -> f
+    java.nio.charset.Charset charset -> g
+    java.lang.String multipartSubtype -> h
+    void setCallBackHandler(com.lidroid.xutils.http.callback.RequestCallBackHandler) -> a
+    java.lang.String generateContentType(java.lang.String,java.nio.charset.Charset) -> a
+    java.lang.String generateBoundary() -> a
+    void addPart(com.lidroid.xutils.http.client.multipart.FormBodyPart) -> a
+    void addPart(java.lang.String,com.lidroid.xutils.http.client.multipart.content.ContentBody) -> a
+com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo -> com.a.a.c.b.b.h:
+    com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo DEFAULT -> a
+    com.lidroid.xutils.http.callback.RequestCallBackHandler callBackHandler -> b
+    long totalLength -> c
+    long pos -> d
+com.lidroid.xutils.http.client.multipart.content.AbstractContentBody -> com.a.a.c.b.b.a.a:
+    java.lang.String mimeType -> b
+    java.lang.String mediaType -> c
+    java.lang.String subType -> d
+    com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo callBackInfo -> a
+    java.lang.String getMimeType() -> a
+com.lidroid.xutils.http.client.multipart.content.ContentBody -> com.a.a.c.b.b.a.b:
+    java.lang.String getFilename() -> b
+com.lidroid.xutils.http.client.multipart.content.ContentDescriptor -> com.a.a.c.b.b.a.c:
+    java.lang.String getMimeType() -> a
+    java.lang.String getCharset() -> c
+    java.lang.String getTransferEncoding() -> d
+com.lidroid.xutils.http.client.multipart.content.StringBody -> com.a.a.c.b.b.a.d:
+    byte[] content -> b
+    java.nio.charset.Charset charset -> c
+    java.lang.String getTransferEncoding() -> d
+    java.lang.String getCharset() -> c
+    java.lang.String getFilename() -> b
+com.lidroid.xutils.http.client.util.URIBuilder -> com.a.a.c.b.c.a:
+    java.lang.String scheme -> a
+    java.lang.String encodedSchemeSpecificPart -> b
+    java.lang.String encodedAuthority -> c
+    java.lang.String userInfo -> d
+    java.lang.String encodedUserInfo -> e
+    java.lang.String host -> f
+    int port -> g
+    java.lang.String path -> h
+    java.lang.String encodedPath -> i
+    java.lang.String encodedQuery -> j
+    java.util.List queryParams -> k
+    java.lang.String fragment -> l
+    java.lang.String encodedFragment -> m
+    void digestURI(java.net.URI) -> a
+    java.util.List parseQuery(java.lang.String) -> a
+    com.lidroid.xutils.http.client.util.URIBuilder addParameter(java.lang.String,java.lang.String) -> a
+com.lidroid.xutils.http.client.util.URLEncodedUtils -> com.a.a.c.b.c.b:
+    char[] DELIM -> a
+    java.util.BitSet UNRESERVED -> b
+    java.util.BitSet PUNCT -> c
+    java.util.BitSet USERINFO -> d
+    java.util.BitSet PATHSAFE -> e
+    java.util.BitSet FRAGMENT -> f
+    java.util.BitSet RESERVED -> g
+    java.util.BitSet URLENCODER -> h
+    java.util.List parse(java.lang.String) -> a
+    java.lang.String format(java.util.List,java.lang.String) -> a
+    java.lang.String urlencode(java.lang.String,java.nio.charset.Charset,java.util.BitSet,boolean) -> a
+    java.lang.String encodeFormFields(java.lang.String,java.lang.String) -> a
+com.lidroid.xutils.task.Node -> com.a.a.d.a:
+    boolean valueAsT -> b
+    com.lidroid.xutils.task.PriorityObject value -> c
+    com.lidroid.xutils.task.Node next -> a
+    com.lidroid.xutils.task.Priority getPriority() -> a
+    java.lang.Object getValue() -> b
+    void setValue(java.lang.Object) -> a
+com.lidroid.xutils.task.Priority -> com.a.a.d.b:
+    com.lidroid.xutils.task.Priority UI_TOP -> a
+    com.lidroid.xutils.task.Priority UI_NORMAL -> b
+    com.lidroid.xutils.task.Priority UI_LOW -> c
+    com.lidroid.xutils.task.Priority DEFAULT -> d
+    com.lidroid.xutils.task.Priority BG_TOP -> e
+    com.lidroid.xutils.task.Priority BG_NORMAL -> f
+    com.lidroid.xutils.task.Priority BG_LOW -> g
+    com.lidroid.xutils.task.Priority[] ENUM$VALUES -> h
+    com.lidroid.xutils.task.Priority[] values() -> values
+    com.lidroid.xutils.task.Priority valueOf(java.lang.String) -> valueOf
+com.lidroid.xutils.task.PriorityAsyncTask -> com.a.a.d.c:
+    com.lidroid.xutils.task.PriorityAsyncTask$InternalHandler sHandler -> b
+    java.util.concurrent.Executor sDefaultExecutor -> a
+    com.lidroid.xutils.task.PriorityAsyncTask$WorkerRunnable mWorker -> c
+    java.util.concurrent.FutureTask mFuture -> d
+    boolean mExecuteInvoked -> e
+    java.util.concurrent.atomic.AtomicBoolean mCancelled -> f
+    java.util.concurrent.atomic.AtomicBoolean mTaskInvoked -> g
+    com.lidroid.xutils.task.Priority priority -> h
+    void setPriority(com.lidroid.xutils.task.Priority) -> a
+    void postResultIfNotInvoked(java.lang.Object) -> c
+    java.lang.Object postResult(java.lang.Object) -> d
+    java.lang.Object doInBackground(java.lang.Object[]) -> c
+    void onPreExecute() -> a
+    void onPostExecute(java.lang.Object) -> a
+    void onProgressUpdate(java.lang.Object[]) -> b
+    void onCancelled(java.lang.Object) -> b
+    void onCancelled() -> b
+    boolean isCancelled() -> c
+    com.lidroid.xutils.task.PriorityAsyncTask executeOnExecutor(java.util.concurrent.Executor,java.lang.Object[]) -> a
+    void publishProgress(java.lang.Object[]) -> d
+    void finish(java.lang.Object) -> e
+    void access$0(com.lidroid.xutils.task.PriorityAsyncTask,java.lang.Object) -> a
+    java.util.concurrent.atomic.AtomicBoolean access$1(com.lidroid.xutils.task.PriorityAsyncTask) -> a
+    java.lang.Object access$2(com.lidroid.xutils.task.PriorityAsyncTask,java.lang.Object) -> b
+    void access$3(com.lidroid.xutils.task.PriorityAsyncTask,java.lang.Object) -> c
+com.lidroid.xutils.task.PriorityAsyncTask$1 -> com.a.a.d.d:
+    com.lidroid.xutils.task.PriorityAsyncTask this$0 -> a
+    java.lang.Object call() -> call
+com.lidroid.xutils.task.PriorityAsyncTask$2 -> com.a.a.d.e:
+    com.lidroid.xutils.task.PriorityAsyncTask this$0 -> a
+    void done() -> done
+com.lidroid.xutils.task.PriorityAsyncTask$AsyncTaskResult -> com.a.a.d.f:
+    com.lidroid.xutils.task.PriorityAsyncTask mTask -> a
+    java.lang.Object[] mData -> b
+com.lidroid.xutils.task.PriorityAsyncTask$InternalHandler -> com.a.a.d.g:
+    void handleMessage(android.os.Message) -> handleMessage
+com.lidroid.xutils.task.PriorityAsyncTask$WorkerRunnable -> com.a.a.d.h:
+    java.lang.Object[] mParams -> b
+com.lidroid.xutils.task.PriorityExecutor -> com.a.a.d.i:
+    java.util.concurrent.ThreadFactory sThreadFactory -> a
+    java.util.concurrent.BlockingQueue mPoolWorkQueue -> b
+    java.util.concurrent.ThreadPoolExecutor mThreadPoolExecutor -> c
+    void execute(java.lang.Runnable) -> execute
+com.lidroid.xutils.task.PriorityExecutor$1 -> com.a.a.d.j:
+    java.util.concurrent.atomic.AtomicInteger mCount -> a
+    java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.lidroid.xutils.task.PriorityObject -> com.a.a.d.k:
+    com.lidroid.xutils.task.Priority priority -> a
+    java.lang.Object obj -> b
+com.lidroid.xutils.task.PriorityObjectBlockingQueue -> com.a.a.d.l:
+    int capacity -> b
+    java.util.concurrent.atomic.AtomicInteger count -> c
+    com.lidroid.xutils.task.Node head -> a
+    com.lidroid.xutils.task.Node last -> d
+    java.util.concurrent.locks.ReentrantLock takeLock -> e
+    java.util.concurrent.locks.Condition notEmpty -> f
+    java.util.concurrent.locks.ReentrantLock putLock -> g
+    java.util.concurrent.locks.Condition notFull -> h
+    void signalNotEmpty() -> c
+    void signalNotFull() -> d
+    java.lang.Object opQueue(com.lidroid.xutils.task.Node) -> a
+    void _enqueue(com.lidroid.xutils.task.Node) -> b
+    java.lang.Object _dequeue() -> e
+    void fullyLock() -> a
+    void fullyUnlock() -> b
+    int size() -> size
+    int remainingCapacity() -> remainingCapacity
+    void put(java.lang.Object) -> put
+    boolean offer(java.lang.Object,long,java.util.concurrent.TimeUnit) -> offer
+    boolean offer(java.lang.Object) -> offer
+    java.lang.Object take() -> take
+    java.lang.Object poll(long,java.util.concurrent.TimeUnit) -> poll
+    java.lang.Object poll() -> poll
+    java.lang.Object peek() -> peek
+    void unlink(com.lidroid.xutils.task.Node,com.lidroid.xutils.task.Node) -> a
+    boolean remove(java.lang.Object) -> remove
+    boolean contains(java.lang.Object) -> contains
+    java.lang.Object[] toArray() -> toArray
+    java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+    void clear() -> clear
+    int drainTo(java.util.Collection) -> drainTo
+    int drainTo(java.util.Collection,int) -> drainTo
+    java.util.Iterator iterator() -> iterator
+com.lidroid.xutils.task.PriorityObjectBlockingQueue$Itr -> com.a.a.d.m:
+    com.lidroid.xutils.task.Node current -> b
+    com.lidroid.xutils.task.Node lastRet -> c
+    java.lang.Object currentElement -> d
+    com.lidroid.xutils.task.PriorityObjectBlockingQueue this$0 -> a
+    boolean hasNext() -> hasNext
+    com.lidroid.xutils.task.Node nextNode(com.lidroid.xutils.task.Node) -> a
+    java.lang.Object next() -> next
+    void remove() -> remove
+com.lidroid.xutils.task.PriorityRunnable -> com.a.a.d.n:
+    void run() -> run
+com.lidroid.xutils.util.CharsetUtils -> com.a.a.e.a:
+    java.util.List SUPPORT_CHARSET -> a
+    java.lang.String toCharset(java.lang.String,java.lang.String,int) -> a
+    java.lang.String getEncoding(java.lang.String,int) -> a
+    boolean isCharset(java.lang.String,java.lang.String,int) -> b
+com.lidroid.xutils.util.IOUtils -> com.a.a.e.b:
+    void closeQuietly(java.io.Closeable) -> a
+com.lidroid.xutils.util.LogUtils -> com.a.a.e.c:
+    java.lang.String customTagPrefix -> a
+    boolean allowD -> b
+    boolean allowE -> c
+    boolean allowI -> d
+    boolean allowV -> e
+    boolean allowW -> f
+    boolean allowWtf -> g
+    com.lidroid.xutils.util.LogUtils$CustomLogger customLogger -> h
+    java.lang.String generateTag(java.lang.StackTraceElement) -> a
+    void d(java.lang.String) -> a
+    void e(java.lang.String,java.lang.Throwable) -> a
+    void w(java.lang.Throwable) -> a
+com.lidroid.xutils.util.LogUtils$CustomLogger -> com.a.a.e.d:
+    void d(java.lang.String,java.lang.String) -> a
+    void e(java.lang.String,java.lang.String,java.lang.Throwable) -> a
+    void w(java.lang.String,java.lang.Throwable) -> a
+com.lidroid.xutils.util.OtherUtils -> com.a.a.e.e:
+    java.lang.String getUserAgent(android.content.Context) -> a
+    boolean isSupportRange(org.apache.http.HttpResponse) -> a
+    java.lang.String getFileNameFromHttpResponse(org.apache.http.HttpResponse) -> b
+    long sizeOfString(java.lang.String,java.lang.String) -> a
+    java.lang.String getSubString(java.lang.String,int,int) -> a
+    java.lang.StackTraceElement getCallerStackTraceElement() -> a
+com.niyang.mobilesafe.AToolActivity -> com.niyang.mobilesafe.AToolActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void initCommonNumberQuery() -> b
+    void initBackup() -> c
+    void showSmsBackUpDialog() -> a
+    void initAddress() -> d
+com.niyang.mobilesafe.AToolActivity$1 -> com.niyang.mobilesafe.a:
+    com.niyang.mobilesafe.AToolActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.AToolActivity$2 -> com.niyang.mobilesafe.b:
+    com.niyang.mobilesafe.AToolActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.AToolActivity$3 -> com.niyang.mobilesafe.c:
+    com.niyang.mobilesafe.AToolActivity this$0 -> a
+    android.app.ProgressDialog val$dialog -> b
+    void run() -> run
+com.niyang.mobilesafe.AToolActivity$3$1 -> com.niyang.mobilesafe.d:
+    com.niyang.mobilesafe.AToolActivity$3 this$1 -> a
+    android.app.ProgressDialog val$dialog -> b
+    void setProgress(int) -> a
+    void setMax(int) -> b
+com.niyang.mobilesafe.AToolActivity$4 -> com.niyang.mobilesafe.e:
+    com.niyang.mobilesafe.AToolActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.AntivirusAcitivity -> com.niyang.mobilesafe.AntivirusAcitivity:
+    android.widget.ImageView iv_scanning -> a
+    android.widget.TextView tv_name -> b
+    android.widget.ProgressBar pb_bar -> c
+    android.widget.LinearLayout ll_add_text -> d
+    int index -> e
+    java.util.List mVirusInfoList -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    void checkVirus() -> a
+    void initAnimation() -> b
+    void initUI() -> c
+    void access$0(com.niyang.mobilesafe.AntivirusAcitivity,java.util.List) -> a
+    android.widget.ProgressBar access$1(com.niyang.mobilesafe.AntivirusAcitivity) -> a
+    java.util.List access$2(com.niyang.mobilesafe.AntivirusAcitivity) -> b
+    int access$3(com.niyang.mobilesafe.AntivirusAcitivity) -> c
+    void access$4(com.niyang.mobilesafe.AntivirusAcitivity,int) -> a
+    android.widget.TextView access$5(com.niyang.mobilesafe.AntivirusAcitivity) -> d
+    android.widget.LinearLayout access$6(com.niyang.mobilesafe.AntivirusAcitivity) -> e
+    android.widget.ImageView access$7(com.niyang.mobilesafe.AntivirusAcitivity) -> f
+com.niyang.mobilesafe.AntivirusAcitivity$1 -> com.niyang.mobilesafe.f:
+    com.niyang.mobilesafe.AntivirusAcitivity this$0 -> a
+    void run() -> run
+    com.niyang.mobilesafe.AntivirusAcitivity access$0(com.niyang.mobilesafe.AntivirusAcitivity$1) -> a
+com.niyang.mobilesafe.AntivirusAcitivity$1$1 -> com.niyang.mobilesafe.g:
+    com.niyang.mobilesafe.AntivirusAcitivity$1 this$1 -> a
+    int val$size -> b
+    com.niyang.mobilesafe.AntivirusAcitivity$ScanInfo val$info -> c
+    void run() -> run
+    void unInstallVirus() -> a
+com.niyang.mobilesafe.AntivirusAcitivity$ScanInfo -> com.niyang.mobilesafe.h:
+    boolean isVirus -> a
+    java.lang.String packageName -> b
+    java.lang.String name -> c
+    com.niyang.mobilesafe.AntivirusAcitivity this$0 -> d
+com.niyang.mobilesafe.AppLockActivity -> com.niyang.mobilesafe.AppLockActivity:
+    android.widget.Button btn_unlock -> a
+    android.widget.Button btn_locked -> b
+    android.widget.LinearLayout ll_unlock -> c
+    android.widget.LinearLayout ll_lock -> d
+    android.widget.TextView tv_unlock -> e
+    android.widget.TextView tv_lock -> f
+    android.widget.ListView lv_lock -> g
+    android.widget.ListView lv_unlock -> h
+    java.util.List mAppInfoList -> i
+    com.niyang.mobilesafe.db.dao.AppLockDao mDao -> j
+    java.util.List mLockList -> k
+    java.util.List mUnLockList -> l
+    com.niyang.mobilesafe.AppLockActivity$MyAdapter mLockAdapter -> m
+    com.niyang.mobilesafe.AppLockActivity$MyAdapter mUnLockAdapter -> n
+    android.os.Handler mHandler -> o
+    android.view.animation.TranslateAnimation translateAnimation -> p
+    void onCreate(android.os.Bundle) -> onCreate
+    void initAnimation() -> a
+    void initData() -> b
+    void initUI() -> c
+    void access$0(com.niyang.mobilesafe.AppLockActivity,com.niyang.mobilesafe.AppLockActivity$MyAdapter) -> a
+    android.widget.ListView access$1(com.niyang.mobilesafe.AppLockActivity) -> a
+    com.niyang.mobilesafe.AppLockActivity$MyAdapter access$2(com.niyang.mobilesafe.AppLockActivity) -> b
+    void access$3(com.niyang.mobilesafe.AppLockActivity,com.niyang.mobilesafe.AppLockActivity$MyAdapter) -> b
+    android.widget.ListView access$4(com.niyang.mobilesafe.AppLockActivity) -> c
+    com.niyang.mobilesafe.AppLockActivity$MyAdapter access$5(com.niyang.mobilesafe.AppLockActivity) -> d
+    android.widget.TextView access$6(com.niyang.mobilesafe.AppLockActivity) -> e
+    java.util.List access$7(com.niyang.mobilesafe.AppLockActivity) -> f
+    android.widget.TextView access$8(com.niyang.mobilesafe.AppLockActivity) -> g
+    java.util.List access$9(com.niyang.mobilesafe.AppLockActivity) -> h
+    android.view.animation.TranslateAnimation access$10(com.niyang.mobilesafe.AppLockActivity) -> i
+    com.niyang.mobilesafe.db.dao.AppLockDao access$11(com.niyang.mobilesafe.AppLockActivity) -> j
+    void access$12(com.niyang.mobilesafe.AppLockActivity,java.util.List) -> a
+    void access$13(com.niyang.mobilesafe.AppLockActivity,java.util.List) -> b
+    void access$14(com.niyang.mobilesafe.AppLockActivity,java.util.List) -> c
+    void access$15(com.niyang.mobilesafe.AppLockActivity,com.niyang.mobilesafe.db.dao.AppLockDao) -> a
+    java.util.List access$16(com.niyang.mobilesafe.AppLockActivity) -> k
+    android.os.Handler access$17(com.niyang.mobilesafe.AppLockActivity) -> l
+    android.widget.LinearLayout access$18(com.niyang.mobilesafe.AppLockActivity) -> m
+    android.widget.LinearLayout access$19(com.niyang.mobilesafe.AppLockActivity) -> n
+    android.widget.Button access$20(com.niyang.mobilesafe.AppLockActivity) -> o
+    android.widget.Button access$21(com.niyang.mobilesafe.AppLockActivity) -> p
+com.niyang.mobilesafe.AppLockActivity$1 -> com.niyang.mobilesafe.i:
+    com.niyang.mobilesafe.AppLockActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.niyang.mobilesafe.AppLockActivity$2 -> com.niyang.mobilesafe.j:
+    com.niyang.mobilesafe.AppLockActivity this$0 -> a
+    void run() -> run
+com.niyang.mobilesafe.AppLockActivity$3 -> com.niyang.mobilesafe.k:
+    com.niyang.mobilesafe.AppLockActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.AppLockActivity$4 -> com.niyang.mobilesafe.l:
+    com.niyang.mobilesafe.AppLockActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.AppLockActivity$MyAdapter -> com.niyang.mobilesafe.m:
+    boolean isLock -> b
+    com.niyang.mobilesafe.AppLockActivity this$0 -> a
+    int getCount() -> getCount
+    com.niyang.mobilesafe.db.domain.AppInfo getItem(int) -> a
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    java.lang.Object getItem(int) -> getItem
+    boolean access$1(com.niyang.mobilesafe.AppLockActivity$MyAdapter) -> a
+    com.niyang.mobilesafe.AppLockActivity access$2(com.niyang.mobilesafe.AppLockActivity$MyAdapter) -> b
+com.niyang.mobilesafe.AppLockActivity$MyAdapter$1 -> com.niyang.mobilesafe.n:
+    com.niyang.mobilesafe.AppLockActivity$MyAdapter this$1 -> a
+    android.view.View val$animationView -> b
+    com.niyang.mobilesafe.db.domain.AppInfo val$appInfo -> c
+    void onClick(android.view.View) -> onClick
+    com.niyang.mobilesafe.AppLockActivity$MyAdapter access$0(com.niyang.mobilesafe.AppLockActivity$MyAdapter$1) -> a
+com.niyang.mobilesafe.AppLockActivity$MyAdapter$1$1 -> com.niyang.mobilesafe.o:
+    com.niyang.mobilesafe.AppLockActivity$MyAdapter$1 this$2 -> a
+    android.view.View val$animationView -> b
+    com.niyang.mobilesafe.db.domain.AppInfo val$appInfo -> c
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+com.niyang.mobilesafe.AppLockActivity$ViewHolder -> com.niyang.mobilesafe.p:
+    android.widget.ImageView iv_icon -> a
+    android.widget.TextView tv_name -> b
+    android.widget.ImageView iv_lock -> c
+com.niyang.mobilesafe.AppManagerActivity -> com.niyang.mobilesafe.AppManagerActivity:
+    android.widget.TextView tv_user_space -> a
+    android.widget.TextView tv_sd_space -> b
+    android.widget.ListView lv_app_mananger -> c
+    com.niyang.mobilesafe.AppManagerActivity$MyAdapter mAdapter -> d
+    android.widget.TextView tv_des -> e
+    com.niyang.mobilesafe.db.domain.AppInfo mAppInfo -> f
+    java.util.List mSystemList -> g
+    java.util.List mCustomerList -> h
+    java.util.List mAppInfoList -> i
+    android.os.Handler mHandler -> j
+    android.widget.PopupWindow mPopupWindow -> k
+    void onCreate(android.os.Bundle) -> onCreate
+    void initList() -> b
+    void showPopupWindow(android.view.View) -> a
+    void initTitle() -> c
+    void onResume() -> onResume
+    void getData() -> a
+    void onClick(android.view.View) -> onClick
+    void access$0(com.niyang.mobilesafe.AppManagerActivity,com.niyang.mobilesafe.AppManagerActivity$MyAdapter) -> a
+    android.widget.ListView access$1(com.niyang.mobilesafe.AppManagerActivity) -> a
+    com.niyang.mobilesafe.AppManagerActivity$MyAdapter access$2(com.niyang.mobilesafe.AppManagerActivity) -> b
+    android.widget.TextView access$3(com.niyang.mobilesafe.AppManagerActivity) -> c
+    java.util.List access$4(com.niyang.mobilesafe.AppManagerActivity) -> d
+    java.util.List access$5(com.niyang.mobilesafe.AppManagerActivity) -> e
+    void access$6(com.niyang.mobilesafe.AppManagerActivity,com.niyang.mobilesafe.db.domain.AppInfo) -> a
+    void access$7(com.niyang.mobilesafe.AppManagerActivity,java.util.List) -> a
+    void access$8(com.niyang.mobilesafe.AppManagerActivity,java.util.List) -> b
+    void access$9(com.niyang.mobilesafe.AppManagerActivity,java.util.List) -> c
+    java.util.List access$10(com.niyang.mobilesafe.AppManagerActivity) -> f
+    android.os.Handler access$11(com.niyang.mobilesafe.AppManagerActivity) -> g
+com.niyang.mobilesafe.AppManagerActivity$1 -> com.niyang.mobilesafe.q:
+    com.niyang.mobilesafe.AppManagerActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.niyang.mobilesafe.AppManagerActivity$2 -> com.niyang.mobilesafe.r:
+    com.niyang.mobilesafe.AppManagerActivity this$0 -> a
+    void onScrollStateChanged(android.widget.AbsListView,int) -> onScrollStateChanged
+    void onScroll(android.widget.AbsListView,int,int,int) -> onScroll
+com.niyang.mobilesafe.AppManagerActivity$3 -> com.niyang.mobilesafe.s:
+    com.niyang.mobilesafe.AppManagerActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.niyang.mobilesafe.AppManagerActivity$4 -> com.niyang.mobilesafe.t:
+    com.niyang.mobilesafe.AppManagerActivity this$0 -> a
+    void run() -> run
+com.niyang.mobilesafe.AppManagerActivity$MyAdapter -> com.niyang.mobilesafe.u:
+    com.niyang.mobilesafe.AppManagerActivity this$0 -> a
+    int getViewTypeCount() -> getViewTypeCount
+    int getItemViewType(int) -> getItemViewType
+    int getCount() -> getCount
+    com.niyang.mobilesafe.db.domain.AppInfo getItem(int) -> a
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    java.lang.Object getItem(int) -> getItem
+com.niyang.mobilesafe.AppManagerActivity$ViewHolder -> com.niyang.mobilesafe.v:
+    android.widget.ImageView iv_icon -> a
+    android.widget.TextView tv_name -> b
+    android.widget.TextView tv_path -> c
+com.niyang.mobilesafe.AppManagerActivity$ViewTitleHolder -> com.niyang.mobilesafe.w:
+    android.widget.TextView tv_title -> a
+com.niyang.mobilesafe.BlackNumberActivity -> com.niyang.mobilesafe.BlackNumberActivity:
+    android.widget.Button btn_add -> a
+    android.widget.ListView lv_blacknumber -> b
+    java.util.List balckNumList -> c
+    java.lang.String mode -> d
+    com.niyang.mobilesafe.db.dao.BlackNumberDao dao -> e
+    int mCount -> f
+    com.niyang.mobilesafe.BlackNumberActivity$MyAdapter mAdapter -> g
+    boolean mIsLoad -> h
+    android.os.Handler mHandler -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void initData() -> a
+    void initUI() -> b
+    com.niyang.mobilesafe.BlackNumberActivity$MyAdapter access$0(com.niyang.mobilesafe.BlackNumberActivity) -> a
+    void access$1(com.niyang.mobilesafe.BlackNumberActivity,com.niyang.mobilesafe.BlackNumberActivity$MyAdapter) -> a
+    android.widget.ListView access$2(com.niyang.mobilesafe.BlackNumberActivity) -> b
+    java.util.List access$3(com.niyang.mobilesafe.BlackNumberActivity) -> c
+    com.niyang.mobilesafe.db.dao.BlackNumberDao access$4(com.niyang.mobilesafe.BlackNumberActivity) -> d
+    void access$5(com.niyang.mobilesafe.BlackNumberActivity,com.niyang.mobilesafe.db.dao.BlackNumberDao) -> a
+    void access$6(com.niyang.mobilesafe.BlackNumberActivity,java.util.List) -> a
+    void access$7(com.niyang.mobilesafe.BlackNumberActivity,int) -> a
+    android.os.Handler access$8(com.niyang.mobilesafe.BlackNumberActivity) -> e
+    boolean access$9(com.niyang.mobilesafe.BlackNumberActivity) -> f
+    int access$10(com.niyang.mobilesafe.BlackNumberActivity) -> g
+    void access$11(com.niyang.mobilesafe.BlackNumberActivity,java.lang.String) -> a
+    java.lang.String access$12(com.niyang.mobilesafe.BlackNumberActivity) -> h
+com.niyang.mobilesafe.BlackNumberActivity$1 -> com.niyang.mobilesafe.x:
+    com.niyang.mobilesafe.BlackNumberActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.niyang.mobilesafe.BlackNumberActivity$2 -> com.niyang.mobilesafe.y:
+    com.niyang.mobilesafe.BlackNumberActivity this$0 -> a
+    void run() -> run
+com.niyang.mobilesafe.BlackNumberActivity$3 -> com.niyang.mobilesafe.z:
+    com.niyang.mobilesafe.BlackNumberActivity this$0 -> a
+    void onScrollStateChanged(android.widget.AbsListView,int) -> onScrollStateChanged
+    void onScroll(android.widget.AbsListView,int,int,int) -> onScroll
+    com.niyang.mobilesafe.BlackNumberActivity access$0(com.niyang.mobilesafe.BlackNumberActivity$3) -> a
+com.niyang.mobilesafe.BlackNumberActivity$3$1 -> com.niyang.mobilesafe.aa:
+    com.niyang.mobilesafe.BlackNumberActivity$3 this$1 -> a
+    void run() -> run
+com.niyang.mobilesafe.BlackNumberActivity$4 -> com.niyang.mobilesafe.ab:
+    com.niyang.mobilesafe.BlackNumberActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+    void showDialog() -> a
+    com.niyang.mobilesafe.BlackNumberActivity access$0(com.niyang.mobilesafe.BlackNumberActivity$4) -> a
+com.niyang.mobilesafe.BlackNumberActivity$4$1 -> com.niyang.mobilesafe.ac:
+    com.niyang.mobilesafe.BlackNumberActivity$4 this$1 -> a
+    void onCheckedChanged(android.widget.RadioGroup,int) -> onCheckedChanged
+com.niyang.mobilesafe.BlackNumberActivity$4$2 -> com.niyang.mobilesafe.ad:
+    com.niyang.mobilesafe.BlackNumberActivity$4 this$1 -> a
+    android.widget.EditText val$et_phone -> b
+    android.app.AlertDialog val$dialog -> c
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.BlackNumberActivity$4$3 -> com.niyang.mobilesafe.ae:
+    com.niyang.mobilesafe.BlackNumberActivity$4 this$1 -> a
+    android.app.AlertDialog val$dialog -> b
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.BlackNumberActivity$MyAdapter -> com.niyang.mobilesafe.af:
+    com.niyang.mobilesafe.BlackNumberActivity this$0 -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    com.niyang.mobilesafe.BlackNumberActivity access$0(com.niyang.mobilesafe.BlackNumberActivity$MyAdapter) -> a
+com.niyang.mobilesafe.BlackNumberActivity$MyAdapter$1 -> com.niyang.mobilesafe.ag:
+    com.niyang.mobilesafe.BlackNumberActivity$MyAdapter this$1 -> a
+    int val$position -> b
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.BlackNumberActivity$ViewHolder -> com.niyang.mobilesafe.ah:
+    android.widget.TextView tv_phone -> a
+    android.widget.TextView tv_mode -> b
+    android.widget.ImageView iv_delete -> c
+com.niyang.mobilesafe.CacheClearActivity -> com.niyang.mobilesafe.CacheClearActivity:
+    android.widget.Button btn_clean -> a
+    android.widget.ProgressBar pb_bar -> b
+    android.widget.TextView tv_name -> c
+    android.widget.LinearLayout ll_add_text -> d
+    android.content.pm.PackageManager mPm -> e
+    int mIndex -> f
+    android.os.Handler mHandler -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    void initData() -> a
+    void getPackageCache(java.lang.String) -> a
+    void initUI() -> b
+    android.widget.LinearLayout access$0(com.niyang.mobilesafe.CacheClearActivity) -> a
+    void access$1(com.niyang.mobilesafe.CacheClearActivity,android.content.pm.PackageManager) -> a
+    android.content.pm.PackageManager access$2(com.niyang.mobilesafe.CacheClearActivity) -> b
+    android.widget.ProgressBar access$3(com.niyang.mobilesafe.CacheClearActivity) -> c
+    int access$4(com.niyang.mobilesafe.CacheClearActivity) -> d
+    void access$5(com.niyang.mobilesafe.CacheClearActivity,int) -> a
+    android.widget.TextView access$6(com.niyang.mobilesafe.CacheClearActivity) -> e
+    android.os.Handler access$7(com.niyang.mobilesafe.CacheClearActivity) -> f
+com.niyang.mobilesafe.CacheClearActivity$1 -> com.niyang.mobilesafe.ai:
+    com.niyang.mobilesafe.CacheClearActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    com.niyang.mobilesafe.CacheClearActivity access$0(com.niyang.mobilesafe.CacheClearActivity$1) -> a
+com.niyang.mobilesafe.CacheClearActivity$1$1 -> com.niyang.mobilesafe.aj:
+    com.niyang.mobilesafe.CacheClearActivity$1 this$1 -> a
+    com.niyang.mobilesafe.CacheClearActivity$CacheInfo val$cacheInfo -> b
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.CacheClearActivity$2 -> com.niyang.mobilesafe.ak:
+    com.niyang.mobilesafe.CacheClearActivity this$0 -> a
+    void run() -> run
+    com.niyang.mobilesafe.CacheClearActivity access$0(com.niyang.mobilesafe.CacheClearActivity$2) -> a
+com.niyang.mobilesafe.CacheClearActivity$2$1 -> com.niyang.mobilesafe.al:
+    com.niyang.mobilesafe.CacheClearActivity$2 this$1 -> a
+    java.util.List val$installedPackages -> b
+    java.lang.String val$packageName -> c
+    void run() -> run
+com.niyang.mobilesafe.CacheClearActivity$3 -> com.niyang.mobilesafe.am:
+    com.niyang.mobilesafe.CacheClearActivity this$0 -> a
+    void onGetStatsCompleted(android.content.pm.PackageStats,boolean) -> a
+com.niyang.mobilesafe.CacheClearActivity$4 -> com.niyang.mobilesafe.an:
+    com.niyang.mobilesafe.CacheClearActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.niyang.mobilesafe.CacheClearActivity access$0(com.niyang.mobilesafe.CacheClearActivity$4) -> a
+com.niyang.mobilesafe.CacheClearActivity$4$1 -> com.niyang.mobilesafe.ao:
+    com.niyang.mobilesafe.CacheClearActivity$4 this$1 -> a
+    void onRemoveCompleted(java.lang.String,boolean) -> a
+    com.niyang.mobilesafe.CacheClearActivity$4 access$0(com.niyang.mobilesafe.CacheClearActivity$4$1) -> a
+com.niyang.mobilesafe.CacheClearActivity$4$1$1 -> com.niyang.mobilesafe.ap:
+    com.niyang.mobilesafe.CacheClearActivity$4$1 this$2 -> a
+    void run() -> run
+com.niyang.mobilesafe.CacheClearActivity$CacheInfo -> com.niyang.mobilesafe.aq:
+    java.lang.String name -> a
+    android.graphics.drawable.Drawable icon -> b
+    java.lang.String packageName -> c
+    long cacheSize -> d
+    com.niyang.mobilesafe.CacheClearActivity this$0 -> e
+com.niyang.mobilesafe.CommonNumberActivity -> com.niyang.mobilesafe.CommonNumberActivity:
+    android.widget.ExpandableListView elv_common_number -> a
+    java.util.List mGroup -> b
+    com.niyang.mobilesafe.CommonNumberActivity$Myadapter mAdapter -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void initData() -> a
+    void startCall(java.lang.String) -> a
+    void initUI() -> b
+    java.util.List access$0(com.niyang.mobilesafe.CommonNumberActivity) -> a
+    com.niyang.mobilesafe.CommonNumberActivity$Myadapter access$1(com.niyang.mobilesafe.CommonNumberActivity) -> b
+com.niyang.mobilesafe.CommonNumberActivity$1 -> com.niyang.mobilesafe.ar:
+    com.niyang.mobilesafe.CommonNumberActivity this$0 -> a
+    boolean onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long) -> onChildClick
+com.niyang.mobilesafe.CommonNumberActivity$Myadapter -> com.niyang.mobilesafe.as:
+    com.niyang.mobilesafe.CommonNumberActivity this$0 -> a
+    int getGroupCount() -> getGroupCount
+    int getChildrenCount(int) -> getChildrenCount
+    com.niyang.mobilesafe.engine.CommonnumDao$Group getGroup(int) -> a
+    com.niyang.mobilesafe.engine.CommonnumDao$Child getChild(int,int) -> a
+    long getGroupId(int) -> getGroupId
+    long getChildId(int,int) -> getChildId
+    boolean hasStableIds() -> hasStableIds
+    android.view.View getGroupView(int,boolean,android.view.View,android.view.ViewGroup) -> getGroupView
+    android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup) -> getChildView
+    boolean isChildSelectable(int,int) -> isChildSelectable
+    java.lang.Object getChild(int,int) -> getChild
+    java.lang.Object getGroup(int) -> getGroup
+com.niyang.mobilesafe.ContactListActivity -> com.niyang.mobilesafe.ContactListActivity:
+    android.widget.ListView lv_contact -> a
+    java.util.List contactList -> b
+    android.os.Handler mHandler -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void initData() -> a
+    void initUI() -> b
+    java.util.List access$0(com.niyang.mobilesafe.ContactListActivity) -> a
+    android.widget.ListView access$1(com.niyang.mobilesafe.ContactListActivity) -> b
+    android.os.Handler access$2(com.niyang.mobilesafe.ContactListActivity) -> c
+com.niyang.mobilesafe.ContactListActivity$1 -> com.niyang.mobilesafe.at:
+    com.niyang.mobilesafe.ContactListActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.niyang.mobilesafe.ContactListActivity$2 -> com.niyang.mobilesafe.au:
+    com.niyang.mobilesafe.ContactListActivity this$0 -> a
+    void run() -> run
+com.niyang.mobilesafe.ContactListActivity$3 -> com.niyang.mobilesafe.av:
+    com.niyang.mobilesafe.ContactListActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.niyang.mobilesafe.HomeActivity -> com.niyang.mobilesafe.HomeActivity:
+    android.widget.LinearLayout mLl_one -> a
+    android.widget.LinearLayout mLl_two -> b
+    android.widget.LinearLayout mLl_three -> c
+    android.widget.LinearLayout mLl_four -> d
+    android.widget.LinearLayout mLl_five -> e
+    android.widget.LinearLayout mLl_six -> f
+    android.widget.LinearLayout mLl_seven -> g
+    android.widget.LinearLayout mLl_eight -> h
+    android.widget.LinearLayout mLl_nine -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void showDialog() -> a
+    void showConfirmPsdDialog() -> c
+    void showSetPsdDialog() -> d
+    void initView() -> b
+com.niyang.mobilesafe.HomeActivity$1 -> com.niyang.mobilesafe.aw:
+    com.niyang.mobilesafe.HomeActivity this$0 -> a
+    android.view.View val$view -> b
+    android.app.AlertDialog val$dialog -> c
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.HomeActivity$2 -> com.niyang.mobilesafe.ax:
+    com.niyang.mobilesafe.HomeActivity this$0 -> a
+    android.app.AlertDialog val$dialog -> b
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.HomeActivity$3 -> com.niyang.mobilesafe.ay:
+    com.niyang.mobilesafe.HomeActivity this$0 -> a
+    android.view.View val$view -> b
+    android.app.AlertDialog val$dialog -> c
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.HomeActivity$4 -> com.niyang.mobilesafe.az:
+    com.niyang.mobilesafe.HomeActivity this$0 -> a
+    android.app.AlertDialog val$dialog -> b
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.HomeActivity$MyListener -> com.niyang.mobilesafe.ba:
+    com.niyang.mobilesafe.HomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.ProcessManagerActivity -> com.niyang.mobilesafe.ProcessManagerActivity:
+    android.widget.TextView tv_process_count -> b
+    android.widget.TextView tv_memory_count -> c
+    android.widget.ListView lv_process -> d
+    android.widget.Button btn_choose_all -> e
+    android.widget.Button btn_choose_reverse -> f
+    android.widget.Button btn_clean -> g
+    android.widget.Button btn_setting -> h
+    int mProcessCount -> i
+    java.util.List mProcessInfoList -> j
+    java.util.List mSystemList -> k
+    java.util.List mCustomerList -> l
+    com.niyang.mobilesafe.ProcessManagerActivity$MyAdapter mAdapter -> m
+    android.widget.TextView tv_des -> n
+    long mAvailSpace -> o
+    com.niyang.mobilesafe.db.domain.ProcessInfo mProcessInfo -> a
+    android.os.Handler mHandler -> p
+    java.lang.String mStrTotalSpace -> q
+    void onCreate(android.os.Bundle) -> onCreate
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void intiListData() -> b
+    void getData() -> a
+    void initTitleData() -> c
+    void initUI() -> d
+    void onClick(android.view.View) -> onClick
+    void setting() -> e
+    void cleanProcess() -> f
+    void reverse() -> g
+    void selectAll() -> h
+    void access$0(com.niyang.mobilesafe.ProcessManagerActivity,com.niyang.mobilesafe.ProcessManagerActivity$MyAdapter) -> a
+    android.widget.ListView access$1(com.niyang.mobilesafe.ProcessManagerActivity) -> a
+    com.niyang.mobilesafe.ProcessManagerActivity$MyAdapter access$2(com.niyang.mobilesafe.ProcessManagerActivity) -> b
+    android.widget.TextView access$3(com.niyang.mobilesafe.ProcessManagerActivity) -> c
+    java.util.List access$4(com.niyang.mobilesafe.ProcessManagerActivity) -> d
+    java.util.List access$5(com.niyang.mobilesafe.ProcessManagerActivity) -> e
+    void access$6(com.niyang.mobilesafe.ProcessManagerActivity,java.util.List) -> a
+    void access$7(com.niyang.mobilesafe.ProcessManagerActivity,java.util.List) -> b
+    void access$8(com.niyang.mobilesafe.ProcessManagerActivity,java.util.List) -> c
+    java.util.List access$9(com.niyang.mobilesafe.ProcessManagerActivity) -> f
+    android.os.Handler access$10(com.niyang.mobilesafe.ProcessManagerActivity) -> g
+com.niyang.mobilesafe.ProcessManagerActivity$1 -> com.niyang.mobilesafe.bb:
+    com.niyang.mobilesafe.ProcessManagerActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.niyang.mobilesafe.ProcessManagerActivity$2 -> com.niyang.mobilesafe.bc:
+    com.niyang.mobilesafe.ProcessManagerActivity this$0 -> a
+    void run() -> run
+com.niyang.mobilesafe.ProcessManagerActivity$3 -> com.niyang.mobilesafe.bd:
+    com.niyang.mobilesafe.ProcessManagerActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.niyang.mobilesafe.ProcessManagerActivity$4 -> com.niyang.mobilesafe.be:
+    com.niyang.mobilesafe.ProcessManagerActivity this$0 -> a
+    void onScrollStateChanged(android.widget.AbsListView,int) -> onScrollStateChanged
+    void onScroll(android.widget.AbsListView,int,int,int) -> onScroll
+com.niyang.mobilesafe.ProcessManagerActivity$MyAdapter -> com.niyang.mobilesafe.bf:
+    com.niyang.mobilesafe.ProcessManagerActivity this$0 -> a
+    int getViewTypeCount() -> getViewTypeCount
+    int getItemViewType(int) -> getItemViewType
+    int getCount() -> getCount
+    com.niyang.mobilesafe.db.domain.ProcessInfo getItem(int) -> a
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    java.lang.Object getItem(int) -> getItem
+com.niyang.mobilesafe.ProcessManagerActivity$ViewHolder -> com.niyang.mobilesafe.bg:
+    android.widget.ImageView iv_icon -> a
+    android.widget.TextView tv_name -> b
+    android.widget.TextView tv_memory_info -> c
+    android.widget.CheckBox cb_box -> d
+com.niyang.mobilesafe.ProcessManagerActivity$ViewTitleHolder -> com.niyang.mobilesafe.bh:
+    android.widget.TextView tv_title -> a
+com.niyang.mobilesafe.ProcessSettingActivity -> com.niyang.mobilesafe.ProcessSettingActivity:
+    android.widget.CheckBox cb_show_system -> a
+    android.widget.CheckBox cb_lock_clean -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void initClean() -> a
+    void initSystem() -> b
+    android.widget.CheckBox access$0(com.niyang.mobilesafe.ProcessSettingActivity) -> a
+    android.widget.CheckBox access$1(com.niyang.mobilesafe.ProcessSettingActivity) -> b
+com.niyang.mobilesafe.ProcessSettingActivity$1 -> com.niyang.mobilesafe.bi:
+    com.niyang.mobilesafe.ProcessSettingActivity this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.niyang.mobilesafe.ProcessSettingActivity$2 -> com.niyang.mobilesafe.bj:
+    com.niyang.mobilesafe.ProcessSettingActivity this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.niyang.mobilesafe.QueryAddressActivity -> com.niyang.mobilesafe.QueryAddressActivity:
+    android.widget.EditText et_phone -> a
+    android.widget.Button btn_query -> b
+    android.widget.TextView tv_result -> c
+    java.lang.String address -> d
+    android.os.Handler mHandler -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void initUI() -> a
+    void query(java.lang.String) -> a
+    android.widget.TextView access$0(com.niyang.mobilesafe.QueryAddressActivity) -> a
+    java.lang.String access$1(com.niyang.mobilesafe.QueryAddressActivity) -> b
+    android.widget.EditText access$2(com.niyang.mobilesafe.QueryAddressActivity) -> c
+    void access$3(com.niyang.mobilesafe.QueryAddressActivity,java.lang.String) -> a
+    android.os.Handler access$4(com.niyang.mobilesafe.QueryAddressActivity) -> d
+com.niyang.mobilesafe.QueryAddressActivity$1 -> com.niyang.mobilesafe.bk:
+    com.niyang.mobilesafe.QueryAddressActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.niyang.mobilesafe.QueryAddressActivity$2 -> com.niyang.mobilesafe.bl:
+    com.niyang.mobilesafe.QueryAddressActivity this$0 -> a
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+com.niyang.mobilesafe.QueryAddressActivity$3 -> com.niyang.mobilesafe.bm:
+    com.niyang.mobilesafe.QueryAddressActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.QueryAddressActivity$4 -> com.niyang.mobilesafe.bn:
+    com.niyang.mobilesafe.QueryAddressActivity this$0 -> a
+    java.lang.String val$phone -> b
+    void run() -> run
+com.niyang.mobilesafe.SettingActivity -> com.niyang.mobilesafe.SettingActivity:
+    java.lang.String[] toastStyles -> a
+    int mToastStyle -> b
+    com.niyang.mobilesafe.view.SettingClickView scv_toast_style -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void initBlackNumber() -> b
+    void initLocation() -> c
+    void initToastStyle() -> d
+    void showToastDialog() -> a
+    void initAddress() -> e
+    void initUpdate() -> f
+    com.niyang.mobilesafe.view.SettingClickView access$0(com.niyang.mobilesafe.SettingActivity) -> a
+    java.lang.String[] access$1(com.niyang.mobilesafe.SettingActivity) -> b
+com.niyang.mobilesafe.SettingActivity$1 -> com.niyang.mobilesafe.bo:
+    com.niyang.mobilesafe.SettingActivity this$0 -> a
+    com.niyang.mobilesafe.view.SettingItemView val$siv_blacknumber -> b
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.SettingActivity$2 -> com.niyang.mobilesafe.bp:
+    com.niyang.mobilesafe.SettingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.SettingActivity$3 -> com.niyang.mobilesafe.bq:
+    com.niyang.mobilesafe.SettingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.SettingActivity$4 -> com.niyang.mobilesafe.br:
+    com.niyang.mobilesafe.SettingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.niyang.mobilesafe.SettingActivity$5 -> com.niyang.mobilesafe.bs:
+    com.niyang.mobilesafe.SettingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.niyang.mobilesafe.SettingActivity$6 -> com.niyang.mobilesafe.bt:
+    com.niyang.mobilesafe.SettingActivity this$0 -> a
+    com.niyang.mobilesafe.view.SettingItemView val$siv_address -> b
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.SettingActivity$7 -> com.niyang.mobilesafe.bu:
+    com.niyang.mobilesafe.SettingActivity this$0 -> a
+    com.niyang.mobilesafe.view.SettingItemView val$siv_update -> b
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.Setup1Activity -> com.niyang.mobilesafe.Setup1Activity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void nextBtn(android.view.View) -> nextBtn
+com.niyang.mobilesafe.Setup2Activity -> com.niyang.mobilesafe.Setup2Activity:
+    com.niyang.mobilesafe.view.SettingItemView siv_sim_bound -> a
+    java.lang.String serialNumber -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void initUI() -> a
+    void preBtn(android.view.View) -> preBtn
+    void nextBtn(android.view.View) -> nextBtn
+    com.niyang.mobilesafe.view.SettingItemView access$0(com.niyang.mobilesafe.Setup2Activity) -> a
+    void access$1(com.niyang.mobilesafe.Setup2Activity,java.lang.String) -> a
+    java.lang.String access$2(com.niyang.mobilesafe.Setup2Activity) -> b
+com.niyang.mobilesafe.Setup2Activity$1 -> com.niyang.mobilesafe.bv:
+    com.niyang.mobilesafe.Setup2Activity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.Setup3Activity -> com.niyang.mobilesafe.Setup3Activity:
+    android.widget.EditText et_number -> a
+    android.widget.Button btn_number_contact -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void preBtn(android.view.View) -> preBtn
+    void nextBtn(android.view.View) -> nextBtn
+    void initUI() -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+com.niyang.mobilesafe.Setup3Activity$1 -> com.niyang.mobilesafe.bw:
+    com.niyang.mobilesafe.Setup3Activity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.Setup4Activity -> com.niyang.mobilesafe.Setup4Activity:
+    android.widget.CheckBox cb_open_safe -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void preBtn(android.view.View) -> preBtn
+    void nextBtn(android.view.View) -> nextBtn
+    android.widget.CheckBox access$0(com.niyang.mobilesafe.Setup4Activity) -> a
+com.niyang.mobilesafe.Setup4Activity$1 -> com.niyang.mobilesafe.bx:
+    com.niyang.mobilesafe.Setup4Activity this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.niyang.mobilesafe.SetupOverActivity -> com.niyang.mobilesafe.SetupOverActivity:
+    android.widget.TextView tv_safe_number -> a
+    android.widget.TextView tv_in_setup1 -> b
+    android.widget.ImageView im_safe_pic -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void initData() -> a
+    void initUI() -> b
+com.niyang.mobilesafe.SetupOverActivity$1 -> com.niyang.mobilesafe.by:
+    com.niyang.mobilesafe.SetupOverActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.SplashActivity -> com.niyang.mobilesafe.SplashActivity:
+    android.widget.TextView mTv -> a
+    java.lang.String mVersionName -> b
+    java.lang.String mVersionDes -> c
+    java.lang.String mVersionCode -> d
+    java.lang.String mDownloadUri -> e
+    android.widget.RelativeLayout mRl_root -> f
+    android.os.Handler handler -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    void initShortCut() -> c
+    void initDB() -> d
+    void initAddressDB(java.lang.String) -> a
+    void initAnimation() -> e
+    void initData() -> f
+    java.lang.String getVersionName() -> g
+    int getVersionCode() -> h
+    void checkVersionCode() -> i
+    void enter_home() -> a
+    void downloadApk() -> b
+    void installApk(java.io.File) -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    java.lang.String access$0(com.niyang.mobilesafe.SplashActivity) -> a
+    android.os.Handler access$1(com.niyang.mobilesafe.SplashActivity) -> b
+    void access$2(com.niyang.mobilesafe.SplashActivity,java.lang.String) -> a
+    void access$3(com.niyang.mobilesafe.SplashActivity,java.lang.String) -> b
+    void access$4(com.niyang.mobilesafe.SplashActivity,java.lang.String) -> c
+    void access$5(com.niyang.mobilesafe.SplashActivity,java.lang.String) -> d
+    java.lang.String access$6(com.niyang.mobilesafe.SplashActivity) -> c
+    int access$7(com.niyang.mobilesafe.SplashActivity) -> d
+com.niyang.mobilesafe.SplashActivity$1 -> com.niyang.mobilesafe.bz:
+    com.niyang.mobilesafe.SplashActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    com.niyang.mobilesafe.SplashActivity access$0(com.niyang.mobilesafe.SplashActivity$1) -> a
+com.niyang.mobilesafe.SplashActivity$1$1 -> com.niyang.mobilesafe.ca:
+    com.niyang.mobilesafe.SplashActivity$1 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.niyang.mobilesafe.SplashActivity$1$2 -> com.niyang.mobilesafe.cb:
+    com.niyang.mobilesafe.SplashActivity$1 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.niyang.mobilesafe.SplashActivity$2 -> com.niyang.mobilesafe.cc:
+    com.niyang.mobilesafe.SplashActivity this$0 -> a
+    void run() -> run
+com.niyang.mobilesafe.SplashActivity$3 -> com.niyang.mobilesafe.cd:
+    com.niyang.mobilesafe.SplashActivity this$0 -> a
+    void onSuccess(com.lidroid.xutils.http.ResponseInfo) -> a
+    void onFailure(com.lidroid.xutils.exception.HttpException,java.lang.String) -> a
+    void onStart() -> b
+    void onLoading(long,long,boolean) -> a
+com.niyang.mobilesafe.TestActivity -> com.niyang.mobilesafe.TestActivity:
+    long[] mHits -> a
+    android.widget.Button mBtn -> b
+    void onCreate(android.os.Bundle) -> onCreate
+com.niyang.mobilesafe.TestActivity$1 -> com.niyang.mobilesafe.ce:
+    com.niyang.mobilesafe.TestActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.ToastLocationActivity -> com.niyang.mobilesafe.ToastLocationActivity:
+    android.widget.ImageView im_drag -> a
+    android.widget.Button btn_top -> b
+    android.widget.Button btn_bottom -> c
+    android.view.WindowManager mWM -> d
+    long startTime -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void initUI() -> a
+    long access$0(com.niyang.mobilesafe.ToastLocationActivity) -> a
+    android.widget.ImageView access$1(com.niyang.mobilesafe.ToastLocationActivity) -> b
+    void access$2(com.niyang.mobilesafe.ToastLocationActivity,long) -> a
+    android.widget.Button access$3(com.niyang.mobilesafe.ToastLocationActivity) -> c
+    android.widget.Button access$4(com.niyang.mobilesafe.ToastLocationActivity) -> d
+com.niyang.mobilesafe.ToastLocationActivity$1 -> com.niyang.mobilesafe.cf:
+    com.niyang.mobilesafe.ToastLocationActivity this$0 -> a
+    int val$mScreenWidth -> b
+    int val$mScreenHeight -> c
+    void onClick(android.view.View) -> onClick
+com.niyang.mobilesafe.ToastLocationActivity$2 -> com.niyang.mobilesafe.cg:
+    int startX -> b
+    int startY -> c
+    com.niyang.mobilesafe.ToastLocationActivity this$0 -> a
+    int val$mScreenWidth -> d
+    int val$mScreenHeight -> e
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.niyang.mobilesafe.TrafficActivity -> com.niyang.mobilesafe.TrafficActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.niyang.mobilesafe.db.AppLockOpenHelper -> com.niyang.mobilesafe.a.a:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.niyang.mobilesafe.db.BlackNumberOpenHelper -> com.niyang.mobilesafe.a.b:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.niyang.mobilesafe.db.dao.AppLockDao -> com.niyang.mobilesafe.a.a.a:
+    com.niyang.mobilesafe.db.AppLockOpenHelper appLockOpenHelper -> a
+    com.niyang.mobilesafe.db.dao.AppLockDao appLockDao -> b
+    com.niyang.mobilesafe.db.dao.AppLockDao getInstance(android.content.Context) -> a
+    void insert(java.lang.String) -> a
+    void delete(java.lang.String) -> b
+    java.util.List findAll() -> a
+com.niyang.mobilesafe.db.dao.BlackNumberDao -> com.niyang.mobilesafe.a.a.b:
+    com.niyang.mobilesafe.db.BlackNumberOpenHelper blackNumberOpenHelper -> a
+    com.niyang.mobilesafe.db.dao.BlackNumberDao blackNumberDao -> b
+    com.niyang.mobilesafe.db.dao.BlackNumberDao getInstance(android.content.Context) -> a
+    void insert(java.lang.String,java.lang.String) -> a
+    void delete(java.lang.String) -> a
+    java.util.List find(int) -> a
+    int getCount() -> a
+    java.lang.String getMode(java.lang.String) -> b
+com.niyang.mobilesafe.db.domain.AppInfo -> com.niyang.mobilesafe.a.b.a:
+    java.lang.String name -> a
+    java.lang.String packageName -> b
+    android.graphics.drawable.Drawable icon -> c
+    boolean isSdCard -> d
+    boolean isSystem -> e
+    java.lang.String getName() -> a
+    java.lang.String getPackageName() -> b
+    android.graphics.drawable.Drawable getIcon() -> c
+com.niyang.mobilesafe.db.domain.BlackNumberInfo -> com.niyang.mobilesafe.a.b.b:
+    java.lang.String phone -> a
+    java.lang.String mode -> b
+    java.lang.String toString() -> toString
+com.niyang.mobilesafe.db.domain.ProcessInfo -> com.niyang.mobilesafe.a.b.c:
+    java.lang.String name -> a
+    long memSize -> b
+    android.graphics.drawable.Drawable icon -> c
+    boolean isCheck -> d
+    boolean isSystem -> e
+    java.lang.String packageName -> f
+    java.lang.String getName() -> a
+    long getMemSize() -> b
+    android.graphics.drawable.Drawable getIcon() -> c
+    java.lang.String getPackageName() -> d
+com.niyang.mobilesafe.engine.AddressDao -> com.niyang.mobilesafe.b.a:
+    java.lang.String path -> a
+    java.lang.String mAddress -> b
+    java.lang.String getAddress(java.lang.String) -> a
+    java.lang.String getType(java.lang.String) -> b
+com.niyang.mobilesafe.engine.AppInfoProvider -> com.niyang.mobilesafe.b.b:
+    java.util.List getAppInfoList(android.content.Context) -> a
+com.niyang.mobilesafe.engine.CommonnumDao -> com.niyang.mobilesafe.b.c:
+    java.lang.String path -> a
+    java.util.List getGroup() -> a
+    java.util.List getChild(java.lang.String) -> a
+com.niyang.mobilesafe.engine.CommonnumDao$Child -> com.niyang.mobilesafe.b.d:
+    java.lang.String name -> a
+    java.lang.String _id -> b
+    java.lang.String number -> c
+    com.niyang.mobilesafe.engine.CommonnumDao this$0 -> d
+com.niyang.mobilesafe.engine.CommonnumDao$Group -> com.niyang.mobilesafe.b.e:
+    java.lang.String name -> a
+    java.lang.String idx -> b
+    java.util.List childList -> c
+    com.niyang.mobilesafe.engine.CommonnumDao this$0 -> d
+com.niyang.mobilesafe.engine.ProcessInfoProvider -> com.niyang.mobilesafe.b.f:
+    int getProcessCount(android.content.Context) -> a
+    long getAvailSpace(android.content.Context) -> b
+    long getTotalSpace(android.content.Context) -> c
+    java.util.List getProcessInfo(android.content.Context) -> d
+    void killProcess(android.content.Context,com.niyang.mobilesafe.db.domain.ProcessInfo) -> a
+    void killAll(android.content.Context) -> e
+com.niyang.mobilesafe.engine.SmsBackUp -> com.niyang.mobilesafe.b.g:
+    int index -> a
+    void backup(android.content.Context,java.lang.String,com.niyang.mobilesafe.engine.SmsBackUp$callBack) -> a
+com.niyang.mobilesafe.engine.SmsBackUp$callBack -> com.niyang.mobilesafe.b.h:
+    void setMax(int) -> b
+    void setProgress(int) -> a
+com.niyang.mobilesafe.engine.VirusDao -> com.niyang.mobilesafe.b.i:
+    java.lang.String path -> a
+    java.util.List getVirusList() -> a
+com.niyang.mobilesafe.global.MyApplication -> com.niyang.mobilesafe.global.MyApplication:
+    void onCreate() -> onCreate
+com.niyang.mobilesafe.global.MyApplication$1 -> com.niyang.mobilesafe.global.a:
+    com.niyang.mobilesafe.global.MyApplication this$0 -> a
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+com.niyang.mobilesafe.receiver.BootReceiver -> com.niyang.mobilesafe.receiver.BootReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.niyang.mobilesafe.receiver.DeviceAdminSample -> com.niyang.mobilesafe.receiver.DeviceAdminSample:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.niyang.mobilesafe.receiver.SmsRecevier -> com.niyang.mobilesafe.receiver.SmsRecevier:
+    android.content.ComponentName mDeviceAdiminSample -> a
+    android.app.admin.DevicePolicyManager mDPM -> b
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.niyang.mobilesafe.service.AddressService -> com.niyang.mobilesafe.service.AddressService:
+    android.telephony.TelephonyManager mTm -> a
+    com.niyang.mobilesafe.service.AddressService$MyListener listener -> b
+    android.view.WindowManager$LayoutParams mParams -> c
+    android.view.View mViewToast -> d
+    java.lang.String mAddress -> e
+    android.widget.TextView tv_toast -> f
+    android.view.WindowManager mWm -> g
+    int mScreenWidth -> h
+    int mScreenHeight -> i
+    int[] mDrawables -> j
+    android.os.Handler mhandler -> k
+    com.niyang.mobilesafe.service.AddressService$InnerOutCallReceiver mInnerOutCallReceiver -> l
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    void showToast(java.lang.String) -> a
+    void query(java.lang.String) -> b
+    android.widget.TextView access$0(com.niyang.mobilesafe.service.AddressService) -> a
+    java.lang.String access$1(com.niyang.mobilesafe.service.AddressService) -> b
+    android.view.WindowManager access$2(com.niyang.mobilesafe.service.AddressService) -> c
+    android.view.View access$3(com.niyang.mobilesafe.service.AddressService) -> d
+    int access$4(com.niyang.mobilesafe.service.AddressService) -> e
+    int access$5(com.niyang.mobilesafe.service.AddressService) -> f
+    void access$6(com.niyang.mobilesafe.service.AddressService,java.lang.String) -> a
+    android.os.Handler access$7(com.niyang.mobilesafe.service.AddressService) -> g
+com.niyang.mobilesafe.service.AddressService$1 -> com.niyang.mobilesafe.service.a:
+    com.niyang.mobilesafe.service.AddressService this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.niyang.mobilesafe.service.AddressService$2 -> com.niyang.mobilesafe.service.b:
+    int startX -> b
+    int startY -> c
+    com.niyang.mobilesafe.service.AddressService this$0 -> a
+    android.view.WindowManager$LayoutParams val$params -> d
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.niyang.mobilesafe.service.AddressService$3 -> com.niyang.mobilesafe.service.c:
+    com.niyang.mobilesafe.service.AddressService this$0 -> a
+    java.lang.String val$incomingNumber -> b
+    void run() -> run
+com.niyang.mobilesafe.service.AddressService$InnerOutCallReceiver -> com.niyang.mobilesafe.service.d:
+    com.niyang.mobilesafe.service.AddressService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.niyang.mobilesafe.service.AddressService$MyListener -> com.niyang.mobilesafe.service.e:
+    com.niyang.mobilesafe.service.AddressService this$0 -> a
+    void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+com.niyang.mobilesafe.service.BlackNumberService -> com.niyang.mobilesafe.service.BlackNumberService:
+    com.niyang.mobilesafe.service.BlackNumberService$InnerSmsRecevier mInnerSmsRecevier -> a
+    com.niyang.mobilesafe.db.dao.BlackNumberDao mDao -> b
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    com.niyang.mobilesafe.db.dao.BlackNumberDao access$0(com.niyang.mobilesafe.service.BlackNumberService) -> a
+com.niyang.mobilesafe.service.BlackNumberService$InnerSmsRecevier -> com.niyang.mobilesafe.service.f:
+    com.niyang.mobilesafe.service.BlackNumberService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.niyang.mobilesafe.service.LocationService -> com.niyang.mobilesafe.service.LocationService:
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+com.niyang.mobilesafe.service.LockScreenService -> com.niyang.mobilesafe.service.LockScreenService:
+    com.niyang.mobilesafe.service.LockScreenService$InnerReceiver innerReceiver -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+com.niyang.mobilesafe.service.LockScreenService$InnerReceiver -> com.niyang.mobilesafe.service.g:
+    com.niyang.mobilesafe.service.LockScreenService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.niyang.mobilesafe.service.MyLocationListener -> com.niyang.mobilesafe.service.h:
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+com.niyang.mobilesafe.util.Md5Util -> com.niyang.mobilesafe.c.a:
+    java.lang.String encoder(java.lang.String) -> a
+com.niyang.mobilesafe.util.ServiceUtil -> com.niyang.mobilesafe.c.b:
+    boolean isRunning(android.content.Context,java.lang.String) -> a
+com.niyang.mobilesafe.util.SpUtil -> com.niyang.mobilesafe.c.c:
+    android.content.SharedPreferences sp -> a
+    void putBoolean(android.content.Context,java.lang.String,boolean) -> a
+    boolean getBoolean(android.content.Context,java.lang.String,boolean) -> b
+    void putString(android.content.Context,java.lang.String,java.lang.String) -> a
+    java.lang.String getString(android.content.Context,java.lang.String,java.lang.String) -> b
+    void remove(android.content.Context,java.lang.String) -> a
+    void putInt(android.content.Context,java.lang.String,int) -> a
+    int getInt(android.content.Context,java.lang.String,int) -> b
+com.niyang.mobilesafe.util.StreamUtil -> com.niyang.mobilesafe.c.d:
+    java.lang.String readStream(java.io.InputStream) -> a
+com.niyang.mobilesafe.util.ToastUtil -> com.niyang.mobilesafe.c.e:
+    void show(android.content.Context,java.lang.String) -> a
+com.niyang.mobilesafe.view.FocusTextView -> com.niyang.mobilesafe.view.FocusTextView:
+    boolean isFocused() -> isFocused
+com.niyang.mobilesafe.view.SettingClickView -> com.niyang.mobilesafe.view.SettingClickView:
+    android.widget.TextView tv_des -> a
+    android.widget.TextView tv_title -> b
+    void setTitle(java.lang.String) -> setTitle
+    void setDes(java.lang.String) -> setDes
+com.niyang.mobilesafe.view.SettingItemView -> com.niyang.mobilesafe.view.SettingItemView:
+    android.widget.CheckBox cb_box -> a
+    android.widget.TextView tv_des -> b
+    java.lang.String mDestitle -> c
+    java.lang.String mDesoff -> d
+    java.lang.String mDeson -> e
+    void initAttrs(android.util.AttributeSet) -> a
+    boolean isCheck() -> a
+    void setCheck(boolean) -> setCheck

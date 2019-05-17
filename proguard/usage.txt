@@ -1,0 +1,567 @@
+android.content.pm.IPackageDataObserver$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onRemoveCompleted
+    29:36:public static android.content.pm.IPackageDataObserver asInterface(android.os.IBinder)
+android.content.pm.IPackageDataObserver$Stub$Proxy
+android.content.pm.IPackageStatsObserver$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onGetStatsCompleted
+    29:36:public static android.content.pm.IPackageStatsObserver asInterface(android.os.IBinder)
+android.content.pm.IPackageStatsObserver$Stub$Proxy
+com.lidroid.xutils.BitmapUtils
+com.lidroid.xutils.BitmapUtils$BitmapLoadTask
+com.lidroid.xutils.DbUtils
+com.lidroid.xutils.DbUtils$DaoConfig
+com.lidroid.xutils.DbUtils$DbUpgradeListener
+com.lidroid.xutils.DbUtils$FindTempCache
+com.lidroid.xutils.HttpUtils:
+    private static final int DEFAULT_CONN_TIMEOUT
+    private static final int DEFAULT_RETRY_TIMES
+    private static final java.lang.String HEADER_ACCEPT_ENCODING
+    private static final java.lang.String ENCODING_GZIP
+    private static final int DEFAULT_POOL_SIZE
+    66:67:public HttpUtils(int)
+    70:71:public HttpUtils(java.lang.String)
+    146:146:public org.apache.http.client.HttpClient getHttpClient()
+    152:155:public com.lidroid.xutils.HttpUtils configResponseTextCharset(java.lang.String)
+    159:160:public com.lidroid.xutils.HttpUtils configHttpRedirectHandler(com.lidroid.xutils.http.callback.HttpRedirectHandler)
+    164:165:public com.lidroid.xutils.HttpUtils configHttpCacheSize(int)
+    169:171:public com.lidroid.xutils.HttpUtils configDefaultHttpCacheExpiry(long)
+    175:176:public com.lidroid.xutils.HttpUtils configCurrentHttpCacheExpiry(long)
+    180:181:public com.lidroid.xutils.HttpUtils configCookieStore(org.apache.http.client.CookieStore)
+    185:186:public com.lidroid.xutils.HttpUtils configUserAgent(java.lang.String)
+    190:193:public com.lidroid.xutils.HttpUtils configTimeout(int)
+    197:199:public com.lidroid.xutils.HttpUtils configSoTimeout(int)
+    203:204:public com.lidroid.xutils.HttpUtils configRegisterScheme(org.apache.http.conn.scheme.Scheme)
+    208:210:public com.lidroid.xutils.HttpUtils configSSLSocketFactory(org.apache.http.conn.ssl.SSLSocketFactory)
+    214:215:public com.lidroid.xutils.HttpUtils configRequestRetryCount(int)
+    219:220:public com.lidroid.xutils.HttpUtils configRequestThreadPoolSize(int)
+    227:227:public com.lidroid.xutils.http.HttpHandler send(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,com.lidroid.xutils.http.callback.RequestCallBack)
+    232:235:public com.lidroid.xutils.http.HttpHandler send(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBack)
+    239:239:public com.lidroid.xutils.http.ResponseStream sendSync(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String)
+    243:246:public com.lidroid.xutils.http.ResponseStream sendSync(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,com.lidroid.xutils.http.RequestParams)
+    258:258:public com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,boolean,com.lidroid.xutils.http.callback.RequestCallBack)
+    263:263:public com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,boolean,boolean,com.lidroid.xutils.http.callback.RequestCallBack)
+    268:268:public com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBack)
+    273:273:public com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,boolean,com.lidroid.xutils.http.callback.RequestCallBack)
+    278:278:public com.lidroid.xutils.http.HttpHandler download(java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,boolean,boolean,com.lidroid.xutils.http.callback.RequestCallBack)
+    283:283:public com.lidroid.xutils.http.HttpHandler download(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBack)
+    288:288:public com.lidroid.xutils.http.HttpHandler download(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.lang.String,java.lang.String,com.lidroid.xutils.http.RequestParams,boolean,com.lidroid.xutils.http.callback.RequestCallBack)
+    315:325:private com.lidroid.xutils.http.HttpHandler sendRequest(com.lidroid.xutils.http.client.HttpRequest,com.lidroid.xutils.http.RequestParams,com.lidroid.xutils.http.callback.RequestCallBack)
+    330:336:private com.lidroid.xutils.http.ResponseStream sendSyncRequest(com.lidroid.xutils.http.client.HttpRequest,com.lidroid.xutils.http.RequestParams)
+com.lidroid.xutils.HttpUtils$1:
+    103:106:public void process(org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)
+com.lidroid.xutils.HttpUtils$2:
+    112:125:public void process(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext)
+com.lidroid.xutils.ViewUtils
+com.lidroid.xutils.bitmap.BitmapCacheListener
+com.lidroid.xutils.bitmap.BitmapCommonUtils
+com.lidroid.xutils.bitmap.BitmapDisplayConfig
+com.lidroid.xutils.bitmap.BitmapGlobalConfig
+com.lidroid.xutils.bitmap.BitmapGlobalConfig$BitmapCacheManagementTask
+com.lidroid.xutils.bitmap.PauseOnScrollListener
+com.lidroid.xutils.bitmap.callback.BitmapLoadCallBack
+com.lidroid.xutils.bitmap.callback.BitmapLoadFrom
+com.lidroid.xutils.bitmap.callback.BitmapSetter
+com.lidroid.xutils.bitmap.callback.DefaultBitmapLoadCallBack
+com.lidroid.xutils.bitmap.core.AsyncDrawable
+com.lidroid.xutils.bitmap.core.BitmapCache
+com.lidroid.xutils.bitmap.core.BitmapCache$1
+com.lidroid.xutils.bitmap.core.BitmapCache$BitmapMeta
+com.lidroid.xutils.bitmap.core.BitmapCache$MemoryCacheKey
+com.lidroid.xutils.bitmap.core.BitmapDecoder
+com.lidroid.xutils.bitmap.core.BitmapSize
+com.lidroid.xutils.bitmap.download.DefaultDownloader
+com.lidroid.xutils.bitmap.download.Downloader
+com.lidroid.xutils.bitmap.factory.BitmapFactory
+com.lidroid.xutils.cache.FileNameGenerator
+com.lidroid.xutils.cache.KeyExpiryMap:
+    private static final long serialVersionUID
+    private static final int DEFAULT_CONCURRENCY_LEVEL
+    35:36:public KeyExpiryMap(int,float,int)
+    43:44:public KeyExpiryMap(int)
+com.lidroid.xutils.cache.LruDiskCache
+com.lidroid.xutils.cache.LruDiskCache$1
+com.lidroid.xutils.cache.LruDiskCache$2
+com.lidroid.xutils.cache.LruDiskCache$Editor
+com.lidroid.xutils.cache.LruDiskCache$Editor$FaultHidingOutputStream
+com.lidroid.xutils.cache.LruDiskCache$Entry
+com.lidroid.xutils.cache.LruDiskCache$Snapshot
+com.lidroid.xutils.cache.LruDiskCache$StrictLineReader
+com.lidroid.xutils.cache.LruDiskCache$StrictLineReader$1
+com.lidroid.xutils.cache.LruMemoryCache:
+    57:59:public void setMaxSize(int)
+    128:128:public final java.lang.Object put(java.lang.Object,java.lang.Object)
+    214:214:public final boolean containsKey(java.lang.Object)
+    280:282:public final void evictAll()
+    290:290:public final synchronized int size()
+    299:299:public final synchronized int maxSize()
+    306:306:public final synchronized int hitCount()
+    314:314:public final synchronized int missCount()
+    321:321:public final synchronized int createCount()
+    328:328:public final synchronized int putCount()
+    335:335:public final synchronized int evictionCount()
+    343:343:public final synchronized java.util.Map snapshot()
+com.lidroid.xutils.cache.MD5FileNameGenerator
+com.lidroid.xutils.db.annotation.Check
+com.lidroid.xutils.db.annotation.Column
+com.lidroid.xutils.db.annotation.Finder
+com.lidroid.xutils.db.annotation.Foreign
+com.lidroid.xutils.db.annotation.Id
+com.lidroid.xutils.db.annotation.NoAutoIncrement
+com.lidroid.xutils.db.annotation.NotNull
+com.lidroid.xutils.db.annotation.Table
+com.lidroid.xutils.db.annotation.Transient
+com.lidroid.xutils.db.annotation.Unique
+com.lidroid.xutils.db.converter.BooleanColumnConverter
+com.lidroid.xutils.db.converter.ByteArrayColumnConverter
+com.lidroid.xutils.db.converter.ByteColumnConverter
+com.lidroid.xutils.db.converter.CharColumnConverter
+com.lidroid.xutils.db.converter.ColumnConverter
+com.lidroid.xutils.db.converter.ColumnConverterFactory
+com.lidroid.xutils.db.converter.DateColumnConverter
+com.lidroid.xutils.db.converter.DoubleColumnConverter
+com.lidroid.xutils.db.converter.FloatColumnConverter
+com.lidroid.xutils.db.converter.IntegerColumnConverter
+com.lidroid.xutils.db.converter.LongColumnConverter
+com.lidroid.xutils.db.converter.ShortColumnConverter
+com.lidroid.xutils.db.converter.SqlDateColumnConverter
+com.lidroid.xutils.db.converter.StringColumnConverter
+com.lidroid.xutils.db.sqlite.ColumnDbType
+com.lidroid.xutils.db.sqlite.CursorUtils
+com.lidroid.xutils.db.sqlite.CursorUtils$EntityTempCache
+com.lidroid.xutils.db.sqlite.CursorUtils$FindCacheSequence
+com.lidroid.xutils.db.sqlite.DbModelSelector
+com.lidroid.xutils.db.sqlite.FinderLazyLoader
+com.lidroid.xutils.db.sqlite.ForeignLazyLoader
+com.lidroid.xutils.db.sqlite.Selector
+com.lidroid.xutils.db.sqlite.Selector$OrderBy
+com.lidroid.xutils.db.sqlite.SqlInfo
+com.lidroid.xutils.db.sqlite.SqlInfoBuilder
+com.lidroid.xutils.db.sqlite.WhereBuilder
+com.lidroid.xutils.db.table.Column
+com.lidroid.xutils.db.table.ColumnUtils
+com.lidroid.xutils.db.table.DbModel
+com.lidroid.xutils.db.table.Finder
+com.lidroid.xutils.db.table.Foreign
+com.lidroid.xutils.db.table.Id
+com.lidroid.xutils.db.table.KeyValue
+com.lidroid.xutils.db.table.Table
+com.lidroid.xutils.db.table.TableUtils
+com.lidroid.xutils.exception.BaseException:
+    private static final long serialVersionUID
+    34:35:public BaseException(java.lang.String,java.lang.Throwable)
+com.lidroid.xutils.exception.DbException
+com.lidroid.xutils.exception.HttpException:
+    private static final long serialVersionUID
+    31:32:public HttpException(java.lang.String,java.lang.Throwable)
+    41:43:public HttpException(int)
+    60:62:public HttpException(int,java.lang.String,java.lang.Throwable)
+    69:71:public HttpException(int,java.lang.Throwable)
+    77:77:public int getExceptionCode()
+com.lidroid.xutils.http.HttpCache:
+    private static final int DEFAULT_CACHE_SIZE
+    private static final long DEFAULT_EXPIRY_TIME
+    65:66:public void setCacheSize(int)
+    69:70:public static void setDefaultExpiryTime(long)
+    77:78:public void put(java.lang.String,java.lang.String)
+    91:92:public void clear()
+    95:98:public boolean isEnabled(com.lidroid.xutils.http.client.HttpRequest$HttpMethod)
+    109:110:public void setEnabled(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,boolean)
+com.lidroid.xutils.http.HttpHandler:
+    private static final int UPDATE_START
+    private static final int UPDATE_LOADING
+    private static final int UPDATE_FAILURE
+    private static final int UPDATE_SUCCESS
+    77:77:public com.lidroid.xutils.http.HttpHandler$State getState()
+    87:88:public void setRequestCallBack(com.lidroid.xutils.http.callback.RequestCallBack)
+    91:91:public com.lidroid.xutils.http.callback.RequestCallBack getRequestCallBack()
+    274:292:public void cancel()
+com.lidroid.xutils.http.HttpHandler$NotUseApacheRedirectHandler:
+    349:349:public boolean isRedirectRequested(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext)
+    354:354:public java.net.URI getLocationURI(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext)
+com.lidroid.xutils.http.HttpHandler$State:
+    321:335:public static com.lidroid.xutils.http.HttpHandler$State valueOf(int)
+    340:340:public int value()
+com.lidroid.xutils.http.RequestParams:
+    57:58:public RequestParams()
+    60:64:public RequestParams(java.lang.String)
+    71:72:public void setPriority(com.lidroid.xutils.task.Priority)
+    79:80:public void setContentType(java.lang.String)
+    88:92:public void addHeader(org.apache.http.Header)
+    101:105:public void addHeader(java.lang.String,java.lang.String)
+    113:119:public void addHeaders(java.util.List)
+    128:132:public void setHeader(org.apache.http.Header)
+    142:146:public void setHeader(java.lang.String,java.lang.String)
+    154:160:public void setHeaders(java.util.List)
+    163:167:public void addQueryStringParameter(java.lang.String,java.lang.String)
+    170:174:public void addQueryStringParameter(org.apache.http.NameValuePair)
+    177:185:public void addQueryStringParameter(java.util.List)
+    188:192:public void addBodyParameter(java.lang.String,java.lang.String)
+    195:199:public void addBodyParameter(org.apache.http.NameValuePair)
+    202:210:public void addBodyParameter(java.util.List)
+    213:217:public void addBodyParameter(java.lang.String,java.io.File)
+    220:224:public void addBodyParameter(java.lang.String,java.io.File,java.lang.String)
+    227:231:public void addBodyParameter(java.lang.String,java.io.File,java.lang.String,java.lang.String)
+    234:238:public void addBodyParameter(java.lang.String,java.io.File,java.lang.String,java.lang.String,java.lang.String)
+    241:245:public void addBodyParameter(java.lang.String,java.io.InputStream,long)
+    248:252:public void addBodyParameter(java.lang.String,java.io.InputStream,long,java.lang.String)
+    255:259:public void addBodyParameter(java.lang.String,java.io.InputStream,long,java.lang.String,java.lang.String)
+    262:271:public void setBodyEntity(org.apache.http.HttpEntity)
+com.lidroid.xutils.http.RequestParams$HeaderItem:
+    final synthetic com.lidroid.xutils.http.RequestParams this$0
+    322:325:public RequestParams$HeaderItem(com.lidroid.xutils.http.RequestParams,org.apache.http.Header)
+    327:330:public RequestParams$HeaderItem(com.lidroid.xutils.http.RequestParams,org.apache.http.Header,boolean)
+    332:335:public RequestParams$HeaderItem(com.lidroid.xutils.http.RequestParams,java.lang.String,java.lang.String)
+    337:340:public RequestParams$HeaderItem(com.lidroid.xutils.http.RequestParams,java.lang.String,java.lang.String,boolean)
+com.lidroid.xutils.http.ResponseInfo:
+    31:32:public org.apache.http.Header[] getAllHeaders()
+    36:37:public org.apache.http.Header[] getHeaders(java.lang.String)
+    41:42:public org.apache.http.Header getFirstHeader(java.lang.String)
+    46:47:public org.apache.http.Header getLastHeader(java.lang.String)
+com.lidroid.xutils.http.ResponseStream
+com.lidroid.xutils.http.SyncHttpHandler
+com.lidroid.xutils.http.callback.RequestCallBack:
+    private static final int DEFAULT_RATE
+    private static final int MIN_RATE
+    protected java.lang.Object userTag
+    36:38:public RequestCallBack(int)
+    40:43:public RequestCallBack(java.lang.Object)
+    45:48:public RequestCallBack(int,java.lang.Object)
+    60:61:public final void setRate(int)
+    64:64:public java.lang.Object getUserTag()
+    68:69:public void setUserTag(java.lang.Object)
+    72:72:public final java.lang.String getRequestUrl()
+    83:83:public void onCancelled()
+com.lidroid.xutils.http.client.DefaultSSLSocketFactory:
+    1:1:public static bridge synthetic org.apache.http.conn.ssl.SSLSocketFactory getSocketFactory()
+com.lidroid.xutils.http.client.HttpRequest:
+    53:55:public HttpRequest(com.lidroid.xutils.http.client.HttpRequest$HttpMethod)
+    64:67:public HttpRequest(com.lidroid.xutils.http.client.HttpRequest$HttpMethod,java.net.URI)
+    70:71:public com.lidroid.xutils.http.client.HttpRequest addQueryStringParameter(java.lang.String,java.lang.String)
+    75:76:public com.lidroid.xutils.http.client.HttpRequest addQueryStringParameter(org.apache.http.NameValuePair)
+    89:106:public void setRequestParams(com.lidroid.xutils.http.RequestParams)
+    137:146:public java.net.URI getURI()
+    152:153:public void setURI(java.net.URI)
+    161:161:public java.lang.String getMethod()
+    166:166:public org.apache.http.HttpEntity getEntity()
+    176:177:public boolean expectContinue()
+    182:186:public java.lang.Object clone()
+com.lidroid.xutils.http.client.RetryHandler:
+    private static final int RETRY_SLEEP_INTERVAL
+    59:103:public boolean retryRequest(java.io.IOException,int,org.apache.http.protocol.HttpContext)
+com.lidroid.xutils.http.client.entity.BodyParamsEntity:
+    58:59:public BodyParamsEntity(java.util.List)
+    72:74:public com.lidroid.xutils.http.client.entity.BodyParamsEntity addParameter(java.lang.String,java.lang.String)
+    78:80:public com.lidroid.xutils.http.client.entity.BodyParamsEntity addParams(java.util.List)
+    95:95:public boolean isRepeatable()
+    99:100:public long getContentLength()
+    104:105:public java.io.InputStream getContent()
+    109:115:public void writeTo(java.io.OutputStream)
+    123:123:public boolean isStreaming()
+com.lidroid.xutils.http.client.entity.DecompressingEntity
+com.lidroid.xutils.http.client.entity.FileUploadEntity
+com.lidroid.xutils.http.client.entity.GZipDecompressingEntity
+com.lidroid.xutils.http.client.entity.InputStreamUploadEntity
+com.lidroid.xutils.http.client.multipart.FormBodyPart:
+    52:70:public FormBodyPart(java.lang.String,com.lidroid.xutils.http.client.multipart.content.ContentBody,java.lang.String)
+    77:77:public com.lidroid.xutils.http.client.multipart.content.ContentBody getBody()
+    81:81:public com.lidroid.xutils.http.client.multipart.MinimalFieldHeader getHeader()
+com.lidroid.xutils.http.client.multipart.HttpMultipart:
+    private static synthetic int[] $SWITCH_TABLE$com$lidroid$xutils$http$client$multipart$HttpMultipartMode
+    50:52:private static void writeBytes(org.apache.http.util.ByteArrayBuffer,java.io.OutputStream)
+    56:58:private static void writeBytes(java.lang.String,java.nio.charset.Charset,java.io.OutputStream)
+    62:64:private static void writeBytes(java.lang.String,java.io.OutputStream)
+    68:72:private static void writeField(com.lidroid.xutils.http.client.multipart.MinimalField,java.io.OutputStream)
+    76:80:private static void writeField(com.lidroid.xutils.http.client.multipart.MinimalField,java.nio.charset.Charset,java.io.OutputStream)
+    128:129:public HttpMultipart(java.lang.String,java.nio.charset.Charset,java.lang.String)
+    132:133:public HttpMultipart(java.lang.String,java.lang.String)
+    136:137:public void setSubType(java.lang.String)
+    140:140:public java.lang.String getSubType()
+    144:144:public java.nio.charset.Charset getCharset()
+    148:148:public com.lidroid.xutils.http.client.multipart.HttpMultipartMode getMode()
+    152:152:public java.util.List getBodyParts()
+    163:163:public java.lang.String getBoundary()
+    170:171:private void doWriteTo(com.lidroid.xutils.http.client.multipart.HttpMultipartMode,java.io.OutputStream,boolean)
+    179:241:private void doWriteTo(com.lidroid.xutils.http.client.multipart.HttpMultipartMode,java.io.OutputStream,com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo,boolean)
+    251:252:public void writeTo(java.io.OutputStream,com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo)
+    268:285:public long getTotalLength()
+    38:38:static synthetic int[] $SWITCH_TABLE$com$lidroid$xutils$http$client$multipart$HttpMultipartMode()
+com.lidroid.xutils.http.client.multipart.MIME:
+    public static final java.lang.String CONTENT_TYPE
+    public static final java.lang.String CONTENT_TRANSFER_ENC
+    public static final java.lang.String CONTENT_DISPOSITION
+    public static final java.lang.String ENC_8BIT
+    public static final java.lang.String ENC_BINARY
+    25:25:public MIME()
+com.lidroid.xutils.http.client.multipart.MinimalField:
+    39:39:public java.lang.String getBody()
+com.lidroid.xutils.http.client.multipart.MinimalFieldHeader:
+    49:49:public java.util.List getFields()
+    53:61:public com.lidroid.xutils.http.client.multipart.MinimalField getField(java.lang.String)
+    65:73:public java.util.List getFields(java.lang.String)
+    78:87:public int removeFields(java.lang.String)
+    91:114:public void setField(com.lidroid.xutils.http.client.multipart.MinimalField)
+com.lidroid.xutils.http.client.multipart.MultipartEntity:
+    private long length
+    117:118:public MultipartEntity(com.lidroid.xutils.http.client.multipart.HttpMultipartMode)
+    134:139:public void setMultipartSubtype(java.lang.String)
+    174:175:public void addPart(java.lang.String,com.lidroid.xutils.http.client.multipart.content.ContentBody,java.lang.String)
+    178:184:public boolean isRepeatable()
+    188:188:public boolean isChunked()
+    192:192:public boolean isStreaming()
+    196:200:public long getContentLength()
+    204:204:public org.apache.http.Header getContentType()
+    208:208:public org.apache.http.Header getContentEncoding()
+    213:217:public void consumeContent()
+    220:220:public java.io.InputStream getContent()
+    225:227:public void writeTo(java.io.OutputStream)
+com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo:
+    58:61:public boolean doCallBack(boolean)
+com.lidroid.xutils.http.client.multipart.content.AbstractContentBody:
+    50:50:public java.lang.String getMediaType()
+    54:54:public java.lang.String getSubType()
+    61:62:public void setCallBackInfo(com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo)
+com.lidroid.xutils.http.client.multipart.content.ByteArrayBody
+com.lidroid.xutils.http.client.multipart.content.ContentBody:
+    public abstract void writeTo(java.io.OutputStream)
+    public abstract void setCallBackInfo(com.lidroid.xutils.http.client.multipart.MultipartEntity$CallBackInfo)
+com.lidroid.xutils.http.client.multipart.content.ContentDescriptor:
+    public abstract java.lang.String getMediaType()
+    public abstract java.lang.String getSubType()
+    public abstract long getContentLength()
+com.lidroid.xutils.http.client.multipart.content.FileBody
+com.lidroid.xutils.http.client.multipart.content.InputStreamBody
+com.lidroid.xutils.http.client.multipart.content.StringBody:
+    40:42:public static com.lidroid.xutils.http.client.multipart.content.StringBody create(java.lang.String,java.lang.String,java.nio.charset.Charset)
+    51:51:public static com.lidroid.xutils.http.client.multipart.content.StringBody create(java.lang.String,java.nio.charset.Charset)
+    58:58:public static com.lidroid.xutils.http.client.multipart.content.StringBody create(java.lang.String)
+    97:98:public StringBody(java.lang.String,java.nio.charset.Charset)
+    115:115:public java.io.Reader getReader()
+    121:135:public void writeTo(java.io.OutputStream)
+    146:146:public long getContentLength()
+com.lidroid.xutils.http.client.util.URIBuilder:
+    59:61:public URIBuilder(java.net.URI)
+    92:92:public java.net.URI build(java.nio.charset.Charset)
+    96:137:private java.lang.String buildString(java.nio.charset.Charset)
+    141:141:private java.lang.String encodeUserInfo(java.lang.String,java.nio.charset.Charset)
+    145:145:private java.lang.String encodePath(java.lang.String,java.nio.charset.Charset)
+    149:149:private java.lang.String encodeQuery(java.util.List,java.nio.charset.Charset)
+    153:153:private java.lang.String encodeFragment(java.lang.String,java.nio.charset.Charset)
+    160:161:public com.lidroid.xutils.http.client.util.URIBuilder setScheme(java.lang.String)
+    169:173:public com.lidroid.xutils.http.client.util.URIBuilder setUserInfo(java.lang.String)
+    181:181:public com.lidroid.xutils.http.client.util.URIBuilder setUserInfo(java.lang.String,java.lang.String)
+    188:191:public com.lidroid.xutils.http.client.util.URIBuilder setHost(java.lang.String)
+    198:201:public com.lidroid.xutils.http.client.util.URIBuilder setPort(int)
+    208:211:public com.lidroid.xutils.http.client.util.URIBuilder setPath(java.lang.String)
+    220:223:public com.lidroid.xutils.http.client.util.URIBuilder setQuery(java.lang.String)
+    245:259:public com.lidroid.xutils.http.client.util.URIBuilder setParameter(java.lang.String,java.lang.String)
+    267:269:public com.lidroid.xutils.http.client.util.URIBuilder setFragment(java.lang.String)
+    273:273:public java.lang.String getScheme()
+    277:277:public java.lang.String getUserInfo()
+    281:281:public java.lang.String getHost()
+    285:285:public int getPort()
+    289:289:public java.lang.String getPath()
+    293:296:public java.util.List getQueryParams()
+    301:301:public java.lang.String getFragment()
+    305:317:private static java.lang.String normalizePath(java.lang.String)
+com.lidroid.xutils.http.client.util.URLEncodedUtils:
+    public static final java.lang.String CONTENT_TYPE
+    private static final java.lang.String PARAMETER_SEPARATOR
+    private static final java.lang.String NAME_VALUE_SEPARATOR
+    private static final int RADIX
+    40:40:public URLEncodedUtils()
+    51:61:public static boolean isEncoded(org.apache.http.HttpEntity)
+    76:83:public static java.util.List parse(java.net.URI)
+    99:113:public static void parse(java.util.List,java.util.Scanner)
+    178:191:public static java.lang.String format(java.lang.Iterable,java.nio.charset.Charset)
+    342:368:private static java.lang.String urldecode(java.lang.String,java.nio.charset.Charset,boolean)
+    379:382:private static java.lang.String decodeFormFields(java.lang.String,java.lang.String)
+    393:396:private static java.lang.String decodeFormFields(java.lang.String,java.nio.charset.Charset)
+    430:433:private static java.lang.String encodeFormFields(java.lang.String,java.nio.charset.Charset)
+    446:446:static java.lang.String encUserInfo(java.lang.String,java.nio.charset.Charset)
+    459:459:static java.lang.String encFragment(java.lang.String,java.nio.charset.Charset)
+    472:472:static java.lang.String encPath(java.lang.String,java.nio.charset.Charset)
+com.lidroid.xutils.task.PriorityAsyncTask:
+    private static final int MESSAGE_POST_RESULT
+    private static final int MESSAGE_POST_PROGRESS
+    50:50:public com.lidroid.xutils.task.Priority getPriority()
+    213:214:public final boolean cancel(boolean)
+    219:219:public boolean supportPause()
+    224:224:public boolean supportResume()
+    229:229:public boolean supportCancel()
+    234:234:public void pause()
+    238:238:public void resume()
+    242:243:public void cancel()
+    247:247:public boolean isPaused()
+    261:261:public final java.lang.Object get()
+    279:279:public final java.lang.Object get(long,java.util.concurrent.TimeUnit)
+    290:290:public final varargs com.lidroid.xutils.task.PriorityAsyncTask execute(java.lang.Object[])
+    326:327:public static void execute(java.lang.Runnable)
+    338:339:public static void execute(java.lang.Runnable,com.lidroid.xutils.task.Priority)
+com.lidroid.xutils.task.PriorityExecutor:
+    private static final int CORE_POOL_SIZE
+    private static final int MAXIMUM_POOL_SIZE
+    private static final int KEEP_ALIVE
+    44:44:public int getPoolSize()
+    48:51:public void setPoolSize(int)
+    54:54:public boolean isBusy()
+com.lidroid.xutils.task.PriorityObjectBlockingQueue:
+    private static final long serialVersionUID
+    164:181:public PriorityObjectBlockingQueue(java.util.Collection)
+    567:581:private void writeObject(java.io.ObjectOutputStream)
+    589:602:private void readObject(java.io.ObjectInputStream)
+com.lidroid.xutils.task.TaskHandler
+com.lidroid.xutils.util.CharsetUtils:
+    public static final java.lang.String DEFAULT_ENCODING_CHARSET
+    28:29:private CharsetUtils()
+com.lidroid.xutils.util.DoubleKeyValueMap
+com.lidroid.xutils.util.IOUtils:
+    29:30:private IOUtils()
+    42:48:public static void closeQuietly(android.database.Cursor)
+com.lidroid.xutils.util.LogUtils:
+    34:35:private LogUtils()
+    98:107:public static void d(java.lang.String,java.lang.Throwable)
+    110:119:public static void e(java.lang.String)
+    134:143:public static void i(java.lang.String)
+    146:155:public static void i(java.lang.String,java.lang.Throwable)
+    158:167:public static void v(java.lang.String)
+    170:179:public static void v(java.lang.String,java.lang.Throwable)
+    182:191:public static void w(java.lang.String)
+    194:203:public static void w(java.lang.String,java.lang.Throwable)
+    219:228:public static void wtf(java.lang.String)
+    231:240:public static void wtf(java.lang.String,java.lang.Throwable)
+    243:252:public static void wtf(java.lang.Throwable)
+com.lidroid.xutils.util.LogUtils$CustomLogger:
+    public abstract void d(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract void e(java.lang.String,java.lang.String)
+    public abstract void i(java.lang.String,java.lang.String)
+    public abstract void i(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract void v(java.lang.String,java.lang.String)
+    public abstract void v(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract void w(java.lang.String,java.lang.String)
+    public abstract void w(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract void wtf(java.lang.String,java.lang.String)
+    public abstract void wtf(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract void wtf(java.lang.String,java.lang.Throwable)
+com.lidroid.xutils.util.MimeTypeUtils
+com.lidroid.xutils.util.OtherUtils:
+    private static final int STRING_BUFFER_LENGTH
+    private static javax.net.ssl.SSLSocketFactory sslSocketFactory
+    42:43:private OtherUtils()
+    110:124:public static java.lang.String getDiskCacheDir(android.content.Context,java.lang.String)
+    129:133:public static long getAvailableSpace(java.io.File)
+    171:192:public static java.nio.charset.Charset getCharsetFromHttpRequest(org.apache.http.client.methods.HttpRequestBase)
+    221:221:public static java.lang.StackTraceElement getCurrentStackTraceElement()
+    232:262:public static void trustAllHttpsURLConnection()
+com.lidroid.xutils.util.OtherUtils$1
+com.lidroid.xutils.util.PreferencesCookieStore
+com.lidroid.xutils.util.PreferencesCookieStore$SerializableCookie
+com.lidroid.xutils.view.EventListenerManager
+com.lidroid.xutils.view.EventListenerManager$DynamicHandler
+com.lidroid.xutils.view.ResLoader
+com.lidroid.xutils.view.ResType
+com.lidroid.xutils.view.ViewFinder
+com.lidroid.xutils.view.ViewInjectInfo
+com.lidroid.xutils.view.annotation.ContentView
+com.lidroid.xutils.view.annotation.PreferenceInject
+com.lidroid.xutils.view.annotation.ResInject
+com.lidroid.xutils.view.annotation.ViewInject
+com.lidroid.xutils.view.annotation.event.EventBase
+com.lidroid.xutils.view.annotation.event.OnChildClick
+com.lidroid.xutils.view.annotation.event.OnClick
+com.lidroid.xutils.view.annotation.event.OnCompoundButtonCheckedChange
+com.lidroid.xutils.view.annotation.event.OnFocusChange
+com.lidroid.xutils.view.annotation.event.OnGroupClick
+com.lidroid.xutils.view.annotation.event.OnGroupCollapse
+com.lidroid.xutils.view.annotation.event.OnGroupExpand
+com.lidroid.xutils.view.annotation.event.OnItemClick
+com.lidroid.xutils.view.annotation.event.OnItemLongClick
+com.lidroid.xutils.view.annotation.event.OnItemSelected
+com.lidroid.xutils.view.annotation.event.OnKey
+com.lidroid.xutils.view.annotation.event.OnLongClick
+com.lidroid.xutils.view.annotation.event.OnNothingSelected
+com.lidroid.xutils.view.annotation.event.OnPreferenceChange
+com.lidroid.xutils.view.annotation.event.OnPreferenceClick
+com.lidroid.xutils.view.annotation.event.OnProgressChanged
+com.lidroid.xutils.view.annotation.event.OnRadioGroupCheckedChange
+com.lidroid.xutils.view.annotation.event.OnScroll
+com.lidroid.xutils.view.annotation.event.OnScrollStateChanged
+com.lidroid.xutils.view.annotation.event.OnStartTrackingTouch
+com.lidroid.xutils.view.annotation.event.OnStopTrackingTouch
+com.lidroid.xutils.view.annotation.event.OnTabChange
+com.lidroid.xutils.view.annotation.event.OnTouch
+com.niyang.mobilesafe.BuildConfig
+com.niyang.mobilesafe.CacheClearActivity:
+    protected static final int UPDATE_CACHE_APP
+com.niyang.mobilesafe.ConstantValue
+com.niyang.mobilesafe.R
+com.niyang.mobilesafe.R$anim
+com.niyang.mobilesafe.R$attr
+com.niyang.mobilesafe.R$color
+com.niyang.mobilesafe.R$dimen
+com.niyang.mobilesafe.R$drawable
+com.niyang.mobilesafe.R$id
+com.niyang.mobilesafe.R$layout
+com.niyang.mobilesafe.R$menu
+com.niyang.mobilesafe.R$raw
+com.niyang.mobilesafe.R$string
+com.niyang.mobilesafe.R$style
+com.niyang.mobilesafe.R$styleable
+com.niyang.mobilesafe.R$xml
+com.niyang.mobilesafe.SplashActivity:
+    protected static final int VERSION_UPDATE
+    protected static final int URL_ERROR
+    protected static final int IO_ERROR
+    protected static final int JSONE_ERROR
+    protected static final int ENTER_HOME
+com.niyang.mobilesafe.db.dao.BlackNumberDao:
+    77:84:public void update(java.lang.String,java.lang.String)
+    90:102:public java.util.List findAll()
+com.niyang.mobilesafe.db.domain.AppInfo:
+    16:17:public void setName(java.lang.String)
+    22:23:public void setPackageName(java.lang.String)
+    28:29:public void setIcon(android.graphics.drawable.Drawable)
+    31:31:public boolean isSdCard()
+    34:35:public void setSdCard(boolean)
+    37:37:public boolean isSystem()
+    40:41:public void setSystem(boolean)
+com.niyang.mobilesafe.db.domain.BlackNumberInfo:
+    7:7:public java.lang.String getPhone()
+    10:11:public void setPhone(java.lang.String)
+    13:13:public java.lang.String getMode()
+    16:17:public void setMode(java.lang.String)
+com.niyang.mobilesafe.db.domain.ProcessInfo:
+    18:19:public void setName(java.lang.String)
+    26:27:public void setMemSize(long)
+    34:35:public void setIcon(android.graphics.drawable.Drawable)
+    38:38:public boolean isCheck()
+    42:43:public void setCheck(boolean)
+    46:46:public boolean isSystem()
+    50:51:public void setSystem(boolean)
+    58:59:public void setPackageName(java.lang.String)
+com.niyang.mobilesafe.engine.AddressDao:
+    7:7:public AddressDao()
+com.niyang.mobilesafe.engine.AppInfoProvider:
+    13:13:public AppInfoProvider()
+com.niyang.mobilesafe.engine.ProcessInfoProvider:
+    23:23:public ProcessInfoProvider()
+com.niyang.mobilesafe.engine.SmsBackUp:
+    16:16:public SmsBackUp()
+com.niyang.mobilesafe.engine.VirusDao:
+    9:9:public VirusDao()
+com.niyang.mobilesafe.test.Test
+com.niyang.mobilesafe.util.Md5Util:
+    8:8:public Md5Util()
+com.niyang.mobilesafe.util.ServiceUtil:
+    9:9:public ServiceUtil()
+com.niyang.mobilesafe.util.SpUtil:
+    6:6:public SpUtil()
+com.niyang.mobilesafe.util.StreamUtil:
+    7:7:public StreamUtil()
+com.niyang.mobilesafe.util.ToastUtil:
+    6:6:public ToastUtil()
+com.niyang.mobilesafe.view.SettingClickView:
+    private android.widget.CheckBox cb_box
+com.niyang.mobilesafe.view.SettingItemView:
+    private static final java.lang.String NAMESPACE

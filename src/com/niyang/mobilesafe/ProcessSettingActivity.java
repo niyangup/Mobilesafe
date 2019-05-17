@@ -41,10 +41,10 @@ public class ProcessSettingActivity extends Activity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 				if (isChecked) {
-					cb_show_system.setText("锁屏清理已开启");
+					cb_lock_clean.setText("锁屏清理已开启");
 					startService(new Intent(ProcessSettingActivity.this, LockScreenService.class));
 				} else {
-					cb_show_system.setText("锁屏清理已关闭");
+					cb_lock_clean.setText("锁屏清理已关闭");
 					stopService(new Intent(ProcessSettingActivity.this, LockScreenService.class));
 				}
 			}

@@ -40,6 +40,7 @@
         android:drawableLeft="@android:drawable/btn_star"
         android:background="@drawable/selector_atool_item_bg"/>
     
+<!--   程序锁 
      <TextView 
         android:id="@+id/tv_app_lock"
         android:layout_width="match_parent"
@@ -51,5 +52,5 @@
         android:gravity="center"
         android:drawableLeft="@android:drawable/btn_star"
         android:background="@drawable/selector_atool_item_bg"/>
-    
+    -->
 </LinearLayout>

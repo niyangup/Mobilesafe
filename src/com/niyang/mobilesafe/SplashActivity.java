@@ -103,6 +103,7 @@ public class SplashActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
+
 		mRl_root = (RelativeLayout) findViewById(R.id.rl_root);
 		mTv = (TextView) findViewById(R.id.tv_version_name);
 		initData();
@@ -145,6 +146,8 @@ public class SplashActivity extends Activity {
 		initAddressDB("address.db");
 		// 2.常用号码数据库拷贝
 		initAddressDB("commonnum.db");
+		// 3.病毒数据库拷贝
+		initAddressDB("antivirus.db");
 
 	}
 

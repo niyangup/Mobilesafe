@@ -1,0 +1,312 @@
+com.lidroid.xutils.bitmap.callback.BitmapLoadFrom: com.lidroid.xutils.bitmap.callback.BitmapLoadFrom[] values()
+com.lidroid.xutils.bitmap.callback.BitmapLoadFrom: com.lidroid.xutils.bitmap.callback.BitmapLoadFrom valueOf(java.lang.String)
+com.lidroid.xutils.db.sqlite.ColumnDbType: com.lidroid.xutils.db.sqlite.ColumnDbType[] values()
+com.lidroid.xutils.db.sqlite.ColumnDbType: com.lidroid.xutils.db.sqlite.ColumnDbType valueOf(java.lang.String)
+com.lidroid.xutils.http.HttpHandler$State: com.lidroid.xutils.http.HttpHandler$State[] values()
+com.lidroid.xutils.http.HttpHandler$State: com.lidroid.xutils.http.HttpHandler$State valueOf(java.lang.String)
+com.lidroid.xutils.http.client.HttpRequest$HttpMethod: com.lidroid.xutils.http.client.HttpRequest$HttpMethod[] values()
+com.lidroid.xutils.http.client.HttpRequest$HttpMethod: com.lidroid.xutils.http.client.HttpRequest$HttpMethod valueOf(java.lang.String)
+com.lidroid.xutils.http.client.multipart.HttpMultipartMode: com.lidroid.xutils.http.client.multipart.HttpMultipartMode[] values()
+com.lidroid.xutils.http.client.multipart.HttpMultipartMode: com.lidroid.xutils.http.client.multipart.HttpMultipartMode valueOf(java.lang.String)
+com.lidroid.xutils.task.Priority: com.lidroid.xutils.task.Priority[] values()
+com.lidroid.xutils.task.Priority: com.lidroid.xutils.task.Priority valueOf(java.lang.String)
+com.lidroid.xutils.view.ResType: com.lidroid.xutils.view.ResType[] values()
+com.lidroid.xutils.view.ResType: com.lidroid.xutils.view.ResType valueOf(java.lang.String)
+com.niyang.mobilesafe.AToolActivity
+com.niyang.mobilesafe.AToolActivity: AToolActivity()
+com.niyang.mobilesafe.AntivirusAcitivity
+com.niyang.mobilesafe.AntivirusAcitivity: AntivirusAcitivity()
+com.niyang.mobilesafe.AppLockActivity
+com.niyang.mobilesafe.AppLockActivity: AppLockActivity()
+com.niyang.mobilesafe.AppManagerActivity
+com.niyang.mobilesafe.AppManagerActivity: AppManagerActivity()
+com.niyang.mobilesafe.AppManagerActivity: void onClick(android.view.View)
+com.niyang.mobilesafe.BlackNumberActivity
+com.niyang.mobilesafe.BlackNumberActivity: BlackNumberActivity()
+com.niyang.mobilesafe.CacheClearActivity
+com.niyang.mobilesafe.CacheClearActivity: CacheClearActivity()
+com.niyang.mobilesafe.CommonNumberActivity
+com.niyang.mobilesafe.CommonNumberActivity: CommonNumberActivity()
+com.niyang.mobilesafe.ContactListActivity
+com.niyang.mobilesafe.ContactListActivity: ContactListActivity()
+com.niyang.mobilesafe.HomeActivity
+com.niyang.mobilesafe.HomeActivity: HomeActivity()
+com.niyang.mobilesafe.ProcessManagerActivity
+com.niyang.mobilesafe.ProcessManagerActivity: ProcessManagerActivity()
+com.niyang.mobilesafe.ProcessManagerActivity: void onClick(android.view.View)
+com.niyang.mobilesafe.ProcessSettingActivity
+com.niyang.mobilesafe.ProcessSettingActivity: ProcessSettingActivity()
+com.niyang.mobilesafe.QueryAddressActivity
+com.niyang.mobilesafe.QueryAddressActivity: QueryAddressActivity()
+com.niyang.mobilesafe.R$anim: int cycle_7
+com.niyang.mobilesafe.R$anim: int next_in_anim
+com.niyang.mobilesafe.R$anim: int next_out_anim
+com.niyang.mobilesafe.R$anim: int pre_in_anim
+com.niyang.mobilesafe.R$anim: int pre_out_anim
+com.niyang.mobilesafe.R$anim: int shake
+com.niyang.mobilesafe.R$attr: int desoff
+com.niyang.mobilesafe.R$attr: int deson
+com.niyang.mobilesafe.R$attr: int destitle
+com.niyang.mobilesafe.R$color: int pink
+com.niyang.mobilesafe.R$color: int transparent
+com.niyang.mobilesafe.R$dimen: int activity_horizontal_margin
+com.niyang.mobilesafe.R$dimen: int activity_vertical_margin
+com.niyang.mobilesafe.R$drawable: int act_scanning_03
+com.niyang.mobilesafe.R$drawable: int app
+com.niyang.mobilesafe.R$drawable: int app_pressed
+com.niyang.mobilesafe.R$drawable: int atools
+com.niyang.mobilesafe.R$drawable: int btn_green_normal
+com.niyang.mobilesafe.R$drawable: int btn_green_pressed
+com.niyang.mobilesafe.R$drawable: int call_locate_blue
+com.niyang.mobilesafe.R$drawable: int call_locate_gray
+com.niyang.mobilesafe.R$drawable: int call_locate_green
+com.niyang.mobilesafe.R$drawable: int call_locate_orange
+com.niyang.mobilesafe.R$drawable: int call_locate_white
+com.niyang.mobilesafe.R$drawable: int callmsgsafe
+com.niyang.mobilesafe.R$drawable: int drag
+com.niyang.mobilesafe.R$drawable: int function_greenbutton_normal
+com.niyang.mobilesafe.R$drawable: int function_greenbutton_pressed
+com.niyang.mobilesafe.R$drawable: int ic_delete_btn
+com.niyang.mobilesafe.R$drawable: int ic_delete_btn_focused
+com.niyang.mobilesafe.R$drawable: int ic_launcher
+com.niyang.mobilesafe.R$drawable: int ic_scanner_malware
+com.niyang.mobilesafe.R$drawable: int img1
+com.niyang.mobilesafe.R$drawable: int img2
+com.niyang.mobilesafe.R$drawable: int img3
+com.niyang.mobilesafe.R$drawable: int jiantou1
+com.niyang.mobilesafe.R$drawable: int jiantou1_pressed
+com.niyang.mobilesafe.R$drawable: int listview_divider
+com.niyang.mobilesafe.R$drawable: int local_popup_bg
+com.niyang.mobilesafe.R$drawable: int lock
+com.niyang.mobilesafe.R$drawable: int luncher_bg
+com.niyang.mobilesafe.R$drawable: int netmanager
+com.niyang.mobilesafe.R$drawable: int next
+com.niyang.mobilesafe.R$drawable: int previous
+com.niyang.mobilesafe.R$drawable: int progress_bg
+com.niyang.mobilesafe.R$drawable: int safe
+com.niyang.mobilesafe.R$drawable: int security_progress
+com.niyang.mobilesafe.R$drawable: int security_progress_bg
+com.niyang.mobilesafe.R$drawable: int selector_atool_item_bg
+com.niyang.mobilesafe.R$drawable: int selector_blacknumber_delete_btn_bg
+com.niyang.mobilesafe.R$drawable: int selector_next_btn_bg
+com.niyang.mobilesafe.R$drawable: int selector_set3_btn_bg
+com.niyang.mobilesafe.R$drawable: int settings
+com.niyang.mobilesafe.R$drawable: int setup1
+com.niyang.mobilesafe.R$drawable: int setup2
+com.niyang.mobilesafe.R$drawable: int setup3
+com.niyang.mobilesafe.R$drawable: int sysoptimize
+com.niyang.mobilesafe.R$drawable: int tab_left_default
+com.niyang.mobilesafe.R$drawable: int tab_left_pressed
+com.niyang.mobilesafe.R$drawable: int tab_right_default
+com.niyang.mobilesafe.R$drawable: int tab_right_pressed
+com.niyang.mobilesafe.R$drawable: int taskmanager
+com.niyang.mobilesafe.R$drawable: int trojan
+com.niyang.mobilesafe.R$drawable: int unlock
+com.niyang.mobilesafe.R$id: int action_settings
+com.niyang.mobilesafe.R$id: int btn_add
+com.niyang.mobilesafe.R$id: int btn_bottom
+com.niyang.mobilesafe.R$id: int btn_cancel
+com.niyang.mobilesafe.R$id: int btn_cancel2
+com.niyang.mobilesafe.R$id: int btn_choose_all
+com.niyang.mobilesafe.R$id: int btn_choose_reverse
+com.niyang.mobilesafe.R$id: int btn_clean
+com.niyang.mobilesafe.R$id: int btn_locked
+com.niyang.mobilesafe.R$id: int btn_no
+com.niyang.mobilesafe.R$id: int btn_number_contact
+com.niyang.mobilesafe.R$id: int btn_ok
+com.niyang.mobilesafe.R$id: int btn_query
+com.niyang.mobilesafe.R$id: int btn_setting
+com.niyang.mobilesafe.R$id: int btn_submit
+com.niyang.mobilesafe.R$id: int btn_submit2
+com.niyang.mobilesafe.R$id: int btn_top
+com.niyang.mobilesafe.R$id: int btn_unlock
+com.niyang.mobilesafe.R$id: int button1
+com.niyang.mobilesafe.R$id: int cb_box
+com.niyang.mobilesafe.R$id: int cb_lock_clean
+com.niyang.mobilesafe.R$id: int cb_open_safe
+com.niyang.mobilesafe.R$id: int cb_show_system
+com.niyang.mobilesafe.R$id: int contact_name
+com.niyang.mobilesafe.R$id: int contact_phone
+com.niyang.mobilesafe.R$id: int content
+com.niyang.mobilesafe.R$id: int elv_common_number
+com.niyang.mobilesafe.R$id: int et_confirm_psd
+com.niyang.mobilesafe.R$id: int et_number
+com.niyang.mobilesafe.R$id: int et_phone
+com.niyang.mobilesafe.R$id: int et_psd
+com.niyang.mobilesafe.R$id: int et_set_pas
+com.niyang.mobilesafe.R$id: int handler
+com.niyang.mobilesafe.R$id: int im_drag
+com.niyang.mobilesafe.R$id: int im_safe_pic
+com.niyang.mobilesafe.R$id: int iv_delete
+com.niyang.mobilesafe.R$id: int iv_icon
+com.niyang.mobilesafe.R$id: int iv_lock
+com.niyang.mobilesafe.R$id: int iv_scanning
+com.niyang.mobilesafe.R$id: int ll_add_text
+com.niyang.mobilesafe.R$id: int ll_eight
+com.niyang.mobilesafe.R$id: int ll_five
+com.niyang.mobilesafe.R$id: int ll_four
+com.niyang.mobilesafe.R$id: int ll_lock
+com.niyang.mobilesafe.R$id: int ll_nine
+com.niyang.mobilesafe.R$id: int ll_one
+com.niyang.mobilesafe.R$id: int ll_seven
+com.niyang.mobilesafe.R$id: int ll_six
+com.niyang.mobilesafe.R$id: int ll_three
+com.niyang.mobilesafe.R$id: int ll_two
+com.niyang.mobilesafe.R$id: int ll_unlock
+com.niyang.mobilesafe.R$id: int lv_app_mananger
+com.niyang.mobilesafe.R$id: int lv_blacknumber
+com.niyang.mobilesafe.R$id: int lv_contact
+com.niyang.mobilesafe.R$id: int lv_lock
+com.niyang.mobilesafe.R$id: int lv_process
+com.niyang.mobilesafe.R$id: int lv_unlock
+com.niyang.mobilesafe.R$id: int pb
+com.niyang.mobilesafe.R$id: int pb_bar
+com.niyang.mobilesafe.R$id: int rb_all
+com.niyang.mobilesafe.R$id: int rb_phone
+com.niyang.mobilesafe.R$id: int rb_sms
+com.niyang.mobilesafe.R$id: int rg_group
+com.niyang.mobilesafe.R$id: int rl_root
+com.niyang.mobilesafe.R$id: int scv_location
+com.niyang.mobilesafe.R$id: int scv_toast_style
+com.niyang.mobilesafe.R$id: int siv_address
+com.niyang.mobilesafe.R$id: int siv_blacknumber
+com.niyang.mobilesafe.R$id: int siv_sim_bound
+com.niyang.mobilesafe.R$id: int siv_update
+com.niyang.mobilesafe.R$id: int tv_des
+com.niyang.mobilesafe.R$id: int tv_in_setup1
+com.niyang.mobilesafe.R$id: int tv_lock
+com.niyang.mobilesafe.R$id: int tv_memory_count
+com.niyang.mobilesafe.R$id: int tv_memory_info
+com.niyang.mobilesafe.R$id: int tv_mode
+com.niyang.mobilesafe.R$id: int tv_name
+com.niyang.mobilesafe.R$id: int tv_number
+com.niyang.mobilesafe.R$id: int tv_number_query
+com.niyang.mobilesafe.R$id: int tv_path
+com.niyang.mobilesafe.R$id: int tv_phone
+com.niyang.mobilesafe.R$id: int tv_process_count
+com.niyang.mobilesafe.R$id: int tv_query_phone_address
+com.niyang.mobilesafe.R$id: int tv_result
+com.niyang.mobilesafe.R$id: int tv_safe_number
+com.niyang.mobilesafe.R$id: int tv_sd_space
+com.niyang.mobilesafe.R$id: int tv_share
+com.niyang.mobilesafe.R$id: int tv_sms_backup
+com.niyang.mobilesafe.R$id: int tv_start
+com.niyang.mobilesafe.R$id: int tv_titile
+com.niyang.mobilesafe.R$id: int tv_title
+com.niyang.mobilesafe.R$id: int tv_toast
+com.niyang.mobilesafe.R$id: int tv_uninstall
+com.niyang.mobilesafe.R$id: int tv_unlock
+com.niyang.mobilesafe.R$id: int tv_user_space
+com.niyang.mobilesafe.R$id: int tv_version_name
+com.niyang.mobilesafe.R$layout: int activity_anit_virus
+com.niyang.mobilesafe.R$layout: int activity_app_lock
+com.niyang.mobilesafe.R$layout: int activity_app_manager
+com.niyang.mobilesafe.R$layout: int activity_atool
+com.niyang.mobilesafe.R$layout: int activity_blacknumber
+com.niyang.mobilesafe.R$layout: int activity_cache_clear
+com.niyang.mobilesafe.R$layout: int activity_contactlist
+com.niyang.mobilesafe.R$layout: int activity_home
+com.niyang.mobilesafe.R$layout: int activity_number_query
+com.niyang.mobilesafe.R$layout: int activity_process_manager
+com.niyang.mobilesafe.R$layout: int activity_process_setting
+com.niyang.mobilesafe.R$layout: int activity_queryaddress
+com.niyang.mobilesafe.R$layout: int activity_setting
+com.niyang.mobilesafe.R$layout: int activity_setup1
+com.niyang.mobilesafe.R$layout: int activity_setup2
+com.niyang.mobilesafe.R$layout: int activity_setup3
+com.niyang.mobilesafe.R$layout: int activity_setup4
+com.niyang.mobilesafe.R$layout: int activity_setup_over
+com.niyang.mobilesafe.R$layout: int activity_splash
+com.niyang.mobilesafe.R$layout: int activity_test
+com.niyang.mobilesafe.R$layout: int activity_toast_location
+com.niyang.mobilesafe.R$layout: int activity_traffic
+com.niyang.mobilesafe.R$layout: int contactlist_item
+com.niyang.mobilesafe.R$layout: int dialog_add_blacknumber
+com.niyang.mobilesafe.R$layout: int dialog_confirm_psd
+com.niyang.mobilesafe.R$layout: int dialog_set_psd
+com.niyang.mobilesafe.R$layout: int elv_child_item
+com.niyang.mobilesafe.R$layout: int linearlayout_item
+com.niyang.mobilesafe.R$layout: int listview_app_item
+com.niyang.mobilesafe.R$layout: int listview_app_item_title
+com.niyang.mobilesafe.R$layout: int listview_blacknumber_item
+com.niyang.mobilesafe.R$layout: int listview_islock_item
+com.niyang.mobilesafe.R$layout: int listview_process_item
+com.niyang.mobilesafe.R$layout: int popupwindow_layout
+com.niyang.mobilesafe.R$layout: int setting_click_view
+com.niyang.mobilesafe.R$layout: int setting_item_view
+com.niyang.mobilesafe.R$layout: int toast_view
+com.niyang.mobilesafe.R$menu: int main
+com.niyang.mobilesafe.R$raw: int dark
+com.niyang.mobilesafe.R$string: int action_settings
+com.niyang.mobilesafe.R$string: int app_name
+com.niyang.mobilesafe.R$string: int hello_world
+com.niyang.mobilesafe.R$string: int sample_device_admin
+com.niyang.mobilesafe.R$string: int sample_device_admin_description
+com.niyang.mobilesafe.R$style: int AppBaseTheme
+com.niyang.mobilesafe.R$style: int AppTheme
+com.niyang.mobilesafe.R$style: int NextStyle
+com.niyang.mobilesafe.R$style: int ProStyle
+com.niyang.mobilesafe.R$style: int TitleStyle
+com.niyang.mobilesafe.R$styleable: int[] com_niyang_mobilesafe_view_SettingItemView
+com.niyang.mobilesafe.R$styleable: int com_niyang_mobilesafe_view_SettingItemView_desoff
+com.niyang.mobilesafe.R$styleable: int com_niyang_mobilesafe_view_SettingItemView_deson
+com.niyang.mobilesafe.R$styleable: int com_niyang_mobilesafe_view_SettingItemView_destitle
+com.niyang.mobilesafe.R$xml: int device_admin_sample
+com.niyang.mobilesafe.SettingActivity
+com.niyang.mobilesafe.SettingActivity: SettingActivity()
+com.niyang.mobilesafe.Setup1Activity
+com.niyang.mobilesafe.Setup1Activity: Setup1Activity()
+com.niyang.mobilesafe.Setup1Activity: void nextBtn(android.view.View)
+com.niyang.mobilesafe.Setup2Activity
+com.niyang.mobilesafe.Setup2Activity: Setup2Activity()
+com.niyang.mobilesafe.Setup2Activity: void preBtn(android.view.View)
+com.niyang.mobilesafe.Setup2Activity: void nextBtn(android.view.View)
+com.niyang.mobilesafe.Setup3Activity
+com.niyang.mobilesafe.Setup3Activity: Setup3Activity()
+com.niyang.mobilesafe.Setup3Activity: void preBtn(android.view.View)
+com.niyang.mobilesafe.Setup3Activity: void nextBtn(android.view.View)
+com.niyang.mobilesafe.Setup4Activity
+com.niyang.mobilesafe.Setup4Activity: Setup4Activity()
+com.niyang.mobilesafe.Setup4Activity: void preBtn(android.view.View)
+com.niyang.mobilesafe.Setup4Activity: void nextBtn(android.view.View)
+com.niyang.mobilesafe.SetupOverActivity
+com.niyang.mobilesafe.SetupOverActivity: SetupOverActivity()
+com.niyang.mobilesafe.SplashActivity
+com.niyang.mobilesafe.SplashActivity: SplashActivity()
+com.niyang.mobilesafe.TestActivity
+com.niyang.mobilesafe.TestActivity: TestActivity()
+com.niyang.mobilesafe.ToastLocationActivity
+com.niyang.mobilesafe.ToastLocationActivity: ToastLocationActivity()
+com.niyang.mobilesafe.TrafficActivity
+com.niyang.mobilesafe.TrafficActivity: TrafficActivity()
+com.niyang.mobilesafe.global.MyApplication
+com.niyang.mobilesafe.global.MyApplication: MyApplication()
+com.niyang.mobilesafe.receiver.BootReceiver
+com.niyang.mobilesafe.receiver.BootReceiver: BootReceiver()
+com.niyang.mobilesafe.receiver.DeviceAdminSample
+com.niyang.mobilesafe.receiver.DeviceAdminSample: DeviceAdminSample()
+com.niyang.mobilesafe.receiver.SmsRecevier
+com.niyang.mobilesafe.receiver.SmsRecevier: SmsRecevier()
+com.niyang.mobilesafe.service.AddressService
+com.niyang.mobilesafe.service.AddressService: AddressService()
+com.niyang.mobilesafe.service.BlackNumberService
+com.niyang.mobilesafe.service.BlackNumberService: BlackNumberService()
+com.niyang.mobilesafe.service.LocationService
+com.niyang.mobilesafe.service.LocationService: LocationService()
+com.niyang.mobilesafe.service.LockScreenService
+com.niyang.mobilesafe.service.LockScreenService: LockScreenService()
+com.niyang.mobilesafe.view.FocusTextView
+com.niyang.mobilesafe.view.FocusTextView: FocusTextView(android.content.Context)
+com.niyang.mobilesafe.view.FocusTextView: FocusTextView(android.content.Context,android.util.AttributeSet)
+com.niyang.mobilesafe.view.FocusTextView: FocusTextView(android.content.Context,android.util.AttributeSet,int)
+com.niyang.mobilesafe.view.SettingClickView
+com.niyang.mobilesafe.view.SettingClickView: SettingClickView(android.content.Context)
+com.niyang.mobilesafe.view.SettingClickView: SettingClickView(android.content.Context,android.util.AttributeSet)
+com.niyang.mobilesafe.view.SettingClickView: SettingClickView(android.content.Context,android.util.AttributeSet,int)
+com.niyang.mobilesafe.view.SettingClickView: void setTitle(java.lang.String)
+com.niyang.mobilesafe.view.SettingClickView: void setDes(java.lang.String)
+com.niyang.mobilesafe.view.SettingItemView
+com.niyang.mobilesafe.view.SettingItemView: SettingItemView(android.content.Context)
+com.niyang.mobilesafe.view.SettingItemView: SettingItemView(android.content.Context,android.util.AttributeSet)
+com.niyang.mobilesafe.view.SettingItemView: SettingItemView(android.content.Context,android.util.AttributeSet,int)
+com.niyang.mobilesafe.view.SettingItemView: void setCheck(boolean)
